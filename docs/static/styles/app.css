@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Radiance", "Open Sans", "Roboto", sans-serif;
+  color: #7d7d7d;
+  background-color: #2b2b2b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: #979797;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid #303030;
+}
+
+a {
+  color: #b2b9b7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.main {
+  overflow: auto;
+  padding-bottom: 40px;
+}
+
+.heading {
+  margin: 0;
+  border-bottom: 1px solid #303030;
+  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );
+  box-shadow: 0px 6px 20px 2px #121212;
+}
+
+.headingContents {
+  width: 80%;
+  margin: auto;
+  padding: 14px 0px;
+}
+
+.headingText {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headingPic {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+.panel {
+  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );
+  margin-top: 20px;
+  padding: 15px 20px;
+}
+
+.text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.footing {
+  background-image: linear-gradient( to bottom, #1c1c1c, #121212, #090909, #000000 );
+  border-top: 1px solid #303030;
+  box-shadow: 0px -6px 20px -2px #121212;
+  width: 100%;
+  position: relative;
+  margin-top: -41px;
+  height: 40px;
+  clear: both;
+}
+
+.footingContents {
+  width: 80%;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+
+.footingText {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.footingPic {
+  width: 20px;
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Radiance';
+  src: url('../fonts/radiance.ttf');
+}
+@font-face {
+  font-family: 'RadianceSemibold';
+  src: url('../fonts/radiance-semibold.ttf');
+}
+@font-face {
+  font-family: 'RadianceBold';
+  src: url('../fonts/radiance-bold.ttf');
+}

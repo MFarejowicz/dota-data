@@ -9777,8 +9777,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--2!./app.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js??ref--2!./app.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--2!./app.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--2!./app.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -9808,6 +9808,10 @@ var _app = __webpack_require__(83);
 
 var _app2 = _interopRequireDefault(_app);
 
+var _Tournaments = __webpack_require__(189);
+
+var _Tournaments2 = _interopRequireDefault(_Tournaments);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9832,7 +9836,100 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         "div",
         null,
-        "The Data of DotA2!"
+        _react2.default.createElement(
+          "div",
+          { className: _app2.default.wrapper },
+          _react2.default.createElement(
+            "div",
+            { className: _app2.default.main },
+            _react2.default.createElement(
+              "div",
+              { className: _app2.default.heading },
+              _react2.default.createElement(
+                "div",
+                { className: _app2.default.headingContents },
+                _react2.default.createElement("img", { className: _app2.default.headingPic, src: "./static/img/logo.png", title: "DotA 2", alt: "DotA 2" }),
+                _react2.default.createElement(
+                  "h1",
+                  { className: _app2.default.headingText },
+                  "The Data of DotA 2"
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: _app2.default.content },
+              _react2.default.createElement(
+                "div",
+                { className: _app2.default.panel },
+                _react2.default.createElement(
+                  "h2",
+                  null,
+                  "What's this?"
+                ),
+                _react2.default.createElement("hr", null),
+                _react2.default.createElement(
+                  "p",
+                  { className: _app2.default.text },
+                  "DotA 2 is a popular Multiplayer Online Battle Arena (MOBA) game, developed by Valve and released on Steam. It is free to play, and averages around 600,000 unique casual players monthly. As a result of its large player-base and competitive gameplay, DotA 2 also harbors an impressive competitive scene. Featuring professional players who play the game full time, teams with coaches and managers, as well as tournaments that occur at regular intervals, DotA 2 can be considered a prime example of what is considered an \"E-Sport\".",
+                  _react2.default.createElement("br", null),
+                  _react2.default.createElement("br", null),
+                  "Often overshadowed by main-stream sports, E-Sports are often dismissed because of their relatively new status and content that many consider require significantly less exertion than typical sports. With this website, I'd like to show off some of the statistics surrounding DotA 2 as an E-Sport, and where it lies in relation to sports on the whole."
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: _app2.default.panel },
+                _react2.default.createElement(_Tournaments2.default, null)
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: _app2.default.panel },
+                _react2.default.createElement(
+                  "h2",
+                  null,
+                  "More About this Website"
+                ),
+                _react2.default.createElement("hr", null),
+                _react2.default.createElement(
+                  "p",
+                  { className: _app2.default.text },
+                  "This website is written in ReactJS, a JavaScript library developed by Facebook and maintained by its community. \"The Data of DotA 2\" is also intended to display the depth and versatility of Replot, a React library which contains a set of data visualization tools developed by the Collective Learning Group at the MIT Media Lab. The website itself is written entirely by Matt Farejowicz, an MIT sophomore and research assistant with the CL Group.",
+                  _react2.default.createElement("br", null),
+                  _react2.default.createElement("br", null),
+                  "All data was compiled by Matt Farejowicz, and borrowed from various different sources. Special thanks to ",
+                  _react2.default.createElement(
+                    "a",
+                    { href: "http://wiki.teamliquid.net/" },
+                    "Liquipedia"
+                  ),
+                  " and ",
+                  _react2.default.createElement(
+                    "a",
+                    { href: "https://www.esportsearnings.com/" },
+                    "E-Sports Earnings"
+                  ),
+                  " for a majority of the statistics used."
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: _app2.default.footing },
+          _react2.default.createElement(
+            "div",
+            { className: _app2.default.footingContents },
+            _react2.default.createElement(
+              "h4",
+              { className: _app2.default.footingText },
+              "Made with ",
+              _react2.default.createElement("img", { className: _app2.default.footingPic, src: "./static/img/puck.gif", title: "<3", alt: "<3" }),
+              " by Matt Farejowicz"
+            )
+          )
+        )
       );
     }
   }]);
@@ -10728,13 +10825,27 @@ module.exports = factory;
 
 exports = module.exports = __webpack_require__(87)(undefined);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);", ""]);
 
 // module
-exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: \"Open Sans\", sans-serif;\n}\n", ""]);
+exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  width: 100%;\n  font-family: \"Radiance\", \"Open Sans\", \"Roboto\", sans-serif;\n  color: #7d7d7d;\n  background-color: #2b2b2b;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0;\n  padding: 0;\n  color: #979797;\n}\n\nhr {\n  border: 0;\n  height: 0;\n  border-top: 2px solid #303030;\n}\n\na {\n  color: #b2b9b7;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}\n\n.app__wrapper___1OYwg {\n  min-height: 100%;\n}\n\n.app__main___xN68G {\n  overflow: auto;\n  padding-bottom: 40px;\n}\n\n.app__heading___224PS {\n  margin: 0;\n  border-bottom: 1px solid #303030;\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  box-shadow: 0px 6px 20px 2px #121212;\n}\n\n.app__headingContents___2-M4a {\n  width: 80%;\n  margin: auto;\n  padding: 14px 0px;\n}\n\n.app__headingText___LW-NM {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.app__headingPic___1yndO {\n  display: inline-block;\n  vertical-align: middle;\n  margin-right: 5px;\n}\n\n.app__content___37BGB {\n  width: 80%;\n  margin: auto;\n}\n\n.app__panel___12sux {\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  margin-top: 20px;\n  padding: 15px 20px;\n}\n\n.app__text___1HXxp {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n.app__footing___3AllU {\n  background-image: linear-gradient( to bottom, #1c1c1c, #121212, #090909, #000000 );\n  border-top: 1px solid #303030;\n  box-shadow: 0px -6px 20px -2px #121212;\n  width: 100%;\n  position: relative;\n  margin-top: -41px;\n  height: 40px;\n  clear: both;\n}\n\n.app__footingContents___26DHI {\n  width: 80%;\n  margin: auto;\n  padding: 10px 0 0 0;\n}\n\n.app__footingText___ZAVxu {\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 16px;\n}\n\n.app__footingPic___1273p {\n  width: 20px;\n  margin-right: 2px;\n  display: inline-block;\n  vertical-align: middle;\n}\n", ""]);
 
 // exports
-
+exports.locals = {
+	"wrapper": "app__wrapper___1OYwg",
+	"main": "app__main___xN68G",
+	"heading": "app__heading___224PS",
+	"headingContents": "app__headingContents___2-M4a",
+	"headingText": "app__headingText___LW-NM",
+	"headingPic": "app__headingPic___1yndO",
+	"content": "app__content___37BGB",
+	"panel": "app__panel___12sux",
+	"text": "app__text___1HXxp",
+	"footing": "app__footing___3AllU",
+	"footingContents": "app__footingContents___26DHI",
+	"footingText": "app__footingText___ZAVxu",
+	"footingPic": "app__footingPic___1273p"
+};
 
 /***/ }),
 /* 87 */
@@ -23007,6 +23118,57 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Tournaments = function (_React$Component) {
+  _inherits(Tournaments, _React$Component);
+
+  function Tournaments() {
+    _classCallCheck(this, Tournaments);
+
+    return _possibleConstructorReturn(this, (Tournaments.__proto__ || Object.getPrototypeOf(Tournaments)).apply(this, arguments));
+  }
+
+  _createClass(Tournaments, [{
+    key: "render",
+    value: function render() {
+
+      return _react2.default.createElement(
+        "div",
+        null,
+        "test"
+      );
+    }
+  }]);
+
+  return Tournaments;
+}(_react2.default.Component);
+
+exports.default = Tournaments;
 
 /***/ })
 /******/ ]);
