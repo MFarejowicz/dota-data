@@ -1,7 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import styles from "./static/styles/app.css"
+import PrizePools from "./contents/PrizePools.jsx"
 import Tournaments from "./contents/Tournaments.jsx"
+import Viewers from "./contents/Viewers.jsx"
+import Earnings from "./contents/Earnings.jsx"
 
 
 class App extends React.Component {
@@ -33,7 +36,16 @@ class App extends React.Component {
                 </p>
               </div>
               <div className={styles.panel}>
+                <PrizePools />
+              </div>
+              <div className={styles.panel}>
                 <Tournaments />
+              </div>
+              <div className={styles.panel}>
+                <Viewers />
+              </div>
+              <div className={styles.panel}>
+                <Earnings />
               </div>
               <div className={styles.panel}>
                 <h2>More About this Website</h2>

@@ -1,0 +1,16 @@
+.container {
+  overflow: auto;
+}
+
+.leftBlock {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 40%;
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+}

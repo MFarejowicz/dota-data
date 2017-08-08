@@ -69,7 +69,7 @@ a:hover {
 
 .panel {
   background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 15px 20px;
 }
 

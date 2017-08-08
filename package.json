@@ -31,6 +31,11 @@
     "css-loader": "^0.28.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "replot-bar": "git+ssh://git@github.com/MacroConnections/replot-bar.git",
+    "replot-boxplot": "git+ssh://git@github.com/MacroConnections/replot-boxplot.git",
+    "replot-line": "git+ssh://git@github.com/MacroConnections/replot-line.git",
+    "replot-scatter": "git+ssh://git@github.com/MacroConnections/replot-scatter.git",
+    "replot-treemap": "git+ssh://git@github.com/MacroConnections/replot-treemap.git",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1"
   }
