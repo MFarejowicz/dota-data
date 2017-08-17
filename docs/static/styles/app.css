@@ -109,5 +109,16 @@ a:hover {
   vertical-align: middle;
 }
 
+@media all and (max-width: 800px) {
+  .headingText {
+    font-size: 24px;
+  }
+  .panel h2 {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');

@@ -6,6 +6,18 @@ import styles from "./Block.css"
 
 class Earnings extends React.Component {
 
+  fillTooltip(data) {
+    return (
+      <div>
+        <span>Name: {data.name}<br/></span>
+        <span>Player Tag: {data.ID}<br/></span>
+        <span>Age: {data.age}<br/></span>
+        <span>Country: {data.country}<br/></span>
+        <span>Earnings: ${data.earnings}<br/></span>
+      </div>
+    )
+  }
+
   render() {
     const earnings_data = [
       {ID: "UNiVeRsE", name: "Saahil Arora", earnings: 2826896, country: "USA", age: 27},
@@ -413,7 +425,10 @@ class Earnings extends React.Component {
     ]
     const colorPalette = [
       "#0b7640", "#51385f", "#d8bc32", "#8c1f0b",
-      "#235160", "#500700", "#193858"
+      "#235160", "#500700", "#193858", "#760b41",
+      "#465f38", "#324ed8", "#0b788c", "#603223",
+      "#004950", "#583919", "#41760b", "#400b76",
+      "#1a3004", "#77770a", "#be6810", "#a60e59"
     ]
 
     return (
@@ -424,6 +439,7 @@ class Earnings extends React.Component {
             data={earnings_data}
             xKey="age"
             yKey="earnings"
+            groupKey="country"
             graphTitle="Scatter Plot of Earnings vs Age"
             xTitle="Player Age"
             yTitle="Player Earnings ($)"
@@ -438,10 +454,9 @@ class Earnings extends React.Component {
               lineWidth: 2,
               lineOpacity: 1
             }}
-            legendStyle={{
-              fontColor: "#979797",
-              showBorder: false
-            }}
+            tooltip={true}
+            showLegend={false}
+            tooltipContents={this.fillTooltip}
           />
         <br/>
         <br/>

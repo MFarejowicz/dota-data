@@ -13,7 +13,7 @@ class Tournaments extends React.Component {
       {organizer: "Valve", series: "The International", tournament: "2014", prizepool: 10931105},
       {organizer: "Valve", series: "The International", tournament: "2015", prizepool: 18429613},
       {organizer: "Valve", series: "The International", tournament: "2016", prizepool: 20770460},
-      {organizer: "Valve", series: "The International", tournament: "2017", prizepool: 23987047},
+      {organizer: "Valve", series: "The International", tournament: "2017", prizepool: 24787916},
       {organizer: "Valve", series: "Majors", tournament: "Kiev 2017", prizepool: 3000000},
       {organizer: "Valve", series: "Majors", tournament: "Boston 2016", prizepool: 3000000},
       {organizer: "Valve", series: "Majors", tournament: "Manila 2016", prizepool: 3000000},

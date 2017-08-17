@@ -10265,11 +10265,54 @@ var Earnings = function (_React$Component) {
   }
 
   _createClass(Earnings, [{
+    key: "fillTooltip",
+    value: function fillTooltip(data) {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "span",
+          null,
+          "Name: ",
+          data.name,
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement(
+          "span",
+          null,
+          "Player Tag: ",
+          data.ID,
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement(
+          "span",
+          null,
+          "Age: ",
+          data.age,
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement(
+          "span",
+          null,
+          "Country: ",
+          data.country,
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement(
+          "span",
+          null,
+          "Earnings: $",
+          data.earnings,
+          _react2.default.createElement("br", null)
+        )
+      );
+    }
+  }, {
     key: "render",
     value: function render() {
       var earnings_data = [{ ID: "UNiVeRsE", name: "Saahil Arora", earnings: 2826896, country: "USA", age: 27 }, { ID: "ppd", name: "Peter Dager", earnings: 2602008, country: "USA", age: 25 }, { ID: "SumaiL", name: "Sumail Hassan", earnings: 2507732, country: "Pakistan", age: 18 }, { ID: "Fear", name: "Clinton Loomis", earnings: 2381799, country: "USA", age: 29 }, { ID: "iceice", name: "Li Peng", earnings: 1998558, country: "China", age: 21 }, { ID: "bLink", name: "Zhou Yang", earnings: 1955008, country: "China", age: 24 }, { ID: "y`", name: "Zhang Yiping", earnings: 1955008, country: "China", age: 18 }, { ID: "Faith_bian", name: "Zhang Ruida", earnings: 1954948, country: "China", age: 19 }, { ID: "Shadow", name: "Chu Zeyu", earnings: 1954848, country: "China", age: 20 }, { ID: "Aui_2000", name: "Kurtis Ling", earnings: 1942859, country: "Canada", age: 24 }, { ID: "xiao8", name: "Ning Zhang", earnings: 1817094, country: "China", age: 27 }, { ID: "Hao", name: "Zhihao Chen", earnings: 1755205, country: "China", age: 26 }, { ID: "s4", name: "Gustav Magnusson", earnings: 1398696, country: "Sweden", age: 25 }, { ID: "Mu", name: "Zhang, Pan", earnings: 1386339, country: "China", age: 27 }, { ID: "Puppey", name: "Clement Ivanov", earnings: 1382106, country: "Estonia", age: 27 }, { ID: "MiSeRy", name: "Rasmus Fillipsen", earnings: 1364687, country: "Denmark", age: 26 }, { ID: "N0tail", name: "Johan Sundstein", earnings: 1283642, country: "Denmark", age: 23 }, { ID: "Zai", name: "Ludwig Wahlberg", earnings: 1276246, country: "Sweden", age: 19 }, { ID: "Banana", name: "Wang Jiao", earnings: 1267523, country: "China", age: 23 }, { ID: "Fly", name: "Tal Aizik", earnings: 1199824, country: "Israel", age: 24 }, { ID: "SanSheng", name: "Zhaohui Wang", earnings: 1198813, country: "China", age: 28 }, { ID: "w33", name: "Aliwi Omar", earnings: 1190278, country: "Romania", age: 22 }, { ID: "KuroKy", name: "Kuro Takhasomi", earnings: 1172128, country: "Germany", age: 24 }, { ID: "Fenrir", name: "Chao Lu", earnings: 1135954, country: "China", age: 28 }, { ID: "iceiceice", name: "Daryl Pei Xiang Koh", earnings: 1127603, country: "Singapore", age: 27 }, { ID: "MMY!", name: "Zengrong Lei", earnings: 1100227, country: "China", age: 27 }, { ID: "Arteezy", name: "Artour Babaev", earnings: 1085960, country: "Canada", age: 21 }, { ID: "fy", name: "Linsen Xu", earnings: 1034550, country: "China", age: 22 }, { ID: "Super", name: "Junhao Xie", earnings: 1018066, country: "China", age: 24 }, { ID: "Sylar", name: "Jiajun Liu", earnings: 1013771, country: "China", age: 23 }, { ID: "Resolut1on", name: "Roman Fominok", earnings: 989073, country: "Ukraine", age: 20 }, { ID: "LaNm", name: "Zhicheng Zhang", earnings: 933896, country: "China", age: 26 }, { ID: "JerAx", name: "Jesse Vainikka", earnings: 854408, country: "Finland", age: 25 }, { ID: "Cr1t", name: "Andreas Nielsen", earnings: 840816, country: "Denmark", age: 21 }, { ID: "Agressif", name: "Zheng Sun", earnings: 838031, country: "China", age: 25 }, { ID: "Saksa", name: "Martin Sazdov", earnings: 832306, country: "Macedonia", age: 22 }, { ID: "Q", name: "Bin Fu", earnings: 816562, country: "China", age: 21 }, { ID: "Yao", name: "Zhengzheng Yao", earnings: 815759, country: "China", age: 26 }, { ID: "EternaLEnVy", name: "Jacky Mao", earnings: 802697, country: "Canada", age: 26 }, { ID: "Maybe", name: "Lu Yao", earnings: 791755, country: "China", age: 21 }, { ID: "rOtK", name: "Fan Bai", earnings: 780647, country: "China", age: 25 }, { ID: "MoonMeander", name: "David Tan", earnings: 774872, country: "Canada", age: 25 }, { ID: "Mushi", name: "Yee Fung Chai", earnings: 774863, country: "Malaysia", age: 26 }, { ID: "Miracle", name: "Amer Barqawi", earnings: 768329, country: "Jordan", age: 20 }, { ID: "Faith", name: "Hongda Zeng", earnings: 729957, country: "China", age: 25 }, { ID: "Dendi", name: "Danil Ishutin", earnings: 729594, country: "Ukraine", age: 27 }, { ID: "Moo", name: "David Hull", earnings: 726640, country: "USA", age: 21 }, { ID: "ChuaN", name: "Hock Chuan Wong", earnings: 714049, country: "Malaysia", age: 25 }, { ID: "garder", name: "Xinzhou Liu", earnings: 705460, country: "China", age: 28 }, { ID: "pieliedie", name: "Johan Astrom", earnings: 701423, country: "Sweden", age: 24 }, { ID: "Loda", name: "Jonathan Berg", earnings: 694531, country: "Sweden", age: 29 }, { ID: "Xz", name: "Zezhi Chen", earnings: 692284, country: "China", age: 24 }, { ID: "DDC", name: "Fa Ming Liang", earnings: 689410, country: "Macao", age: 27 }, { ID: "EGM", name: "Jerry Lundqvist", earnings: 671794, country: "Sweden", age: 26 }, { ID: "Shiki", name: "Jiwei Huang", earnings: 651390, country: "China", age: 24 }, { ID: "XBOCT", name: "Oleksandr Dashkevych", earnings: 650363, country: "Ukraine", age: 26 }, { ID: "BurNIng", name: "Zhilei Xu", earnings: 642844, country: "China", age: 29 }, { ID: "Akke", name: "Joakim Akterhall", earnings: 639311, country: "Sweden", age: 29 }, { ID: "AdmiralBulldog", name: "Henrik Ahnberg", earnings: 630159, country: "Sweden", age: 26 }, { ID: "FATA", name: "Adrian Trinks", earnings: 579992, country: "Germany", age: 24 }, { ID: "QO", name: "Sunyeob Kim", earnings: 568179, country: "South Korea", age: 23 }, { ID: "Ferrari_430", name: "Feichi Luo", earnings: 554796, country: "China", age: 27 }, { ID: "Febby", name: "Kim, Yong Min", earnings: 539929, country: "South Korea", age: 24 }, { ID: "Ohaiyo", name: "Xin Khoo Chong", earnings: 538794, country: "Malaysia", age: 24 }, { ID: "Matumbaman", name: "Lasse Urpalainen", earnings: 533039, country: "Finland", age: 22 }, { ID: "MinD_ContRoL", name: "Ivan Ivanov", earnings: 528835, country: "Bulgaria", age: 22 }, { ID: "kpii", name: "Damien Chok", earnings: 525849, country: "Australia", age: 22 }, { ID: "Lil", name: "Ilya Ilyuk", earnings: 508652, country: "Ukraine", age: 21 }, { ID: "KaKa", name: "Zhi Hu", earnings: 502542, country: "China", age: 24 }, { ID: "ana", name: "Anathan Pham", earnings: 481299, country: "Australia", age: 17 }, { ID: "DJ", name: "Djardel Jicko Mampusti", earnings: 477521, country: "Philippines", age: 22 }, { ID: "MP", name: "Noah Pyo", earnings: 447633, country: "South Korea", age: 27 }, { ID: "MidOne", name: "Zheng Yeik Nai", earnings: 446248, country: "Malaysia", age: 28 }, { ID: "Forev", name: "Sang Don Lee", earnings: 423087, country: "South Korea", age: 25 }, { ID: "YYF", name: "Cen Jiang", earnings: 417377, country: "China", age: 30 }, { ID: "Funn1k", name: "Gleb Lipatnikov", earnings: 400409, country: "Ukraine", age: 28 }, { ID: "GoD", name: "Sergey Bragin", earnings: 395022, country: "Russia", age: 25 }, { ID: "END", name: "Yang Pu", earnings: 394600, country: "China", age: 28 }, { ID: "fng", name: "Artem Barshack", earnings: 392584, country: "Belarus", age: 21 }, { ID: "DuBu", name: "Kim, Du Young", earnings: 369666, country: "South Korea", age: 24 }, { ID: "DkPhobos", name: "Alexander Kucheria", earnings: 363162, country: "Ukraine", age: 27 }, { ID: "Cty", name: "Chen, Tianyu", earnings: 361116, country: "China", age: 22 }, { ID: "343", name: "Adam Shah", earnings: 358658, country: "Malaysia", age: 26 }, { ID: "eLeVeN", name: "Ren Yangwei", earnings: 355769, country: "China", age: 21 }, { ID: "Illidan", name: "Ilya Pevcaev", earnings: 349432, country: "Russia", age: 25 }, { ID: "oldchicken", name: "Zhiyong, Wang", earnings: 343658, country: "China", age: 24 }, { ID: "ArtStyle", name: "Ivan Antonov", earnings: 326228, country: "Ukraine", age: 26 }, { ID: "bOne7", name: "Pittner Armand", earnings: 324333, country: "Romania", age: 26 }, { ID: "KuKU", name: "Kuku Palad", earnings: 309355, country: "Philippines", age: 20 }, { ID: "sam_H", name: "Sam Enojosa Hidalgo", earnings: 300522, country: "Philippines", age: 22 }, { ID: "Xi", name: "Yinqi Luo", earnings: 296360, country: "China", age: 26 }, { ID: "Raven", name: "Marc Polo Luis Fausto", earnings: 295681, country: "Philippines", age: 18 }, { ID: "Rabbit", name: "Zhang, Wang", earnings: 270410, country: "China", age: 25 }, { ID: "LighTofHeaveN", name: "Dmitriy Kupriyanov", earnings: 268719, country: "Russia", age: 29 }, { ID: "Zhou", name: "Yao Chen", earnings: 259126, country: "China", age: 27 }, { ID: "Solo", name: "Alexei Berezin", earnings: 251936, country: "Russia", age: 26 }, { ID: "mason", name: "Mason Venne", earnings: 249361, country: "USA", age: 25 }, { ID: "Ryo", name: "Ryo Hasegawa", earnings: 248383, country: "Philippines", age: 24 }, { ID: "Black^", name: "Dominik Reitmeier", earnings: 234828, country: "Germany", age: 24 }, { ID: "Noone", name: "Vladimir Minenko", earnings: 232458, country: "Ukraine", age: 18 }];
       var age_data = [{ ID: "UNiVeRsE", name: "Saahil Arora", age: 27, game: "DotA 2" }, { ID: "ppd", name: "Peter Dager", age: 25, game: "DotA 2" }, { ID: "SumaiL", name: "Sumail Hassan", age: 18, game: "DotA 2" }, { ID: "Fear", name: "Clinton Loomis", age: 29, game: "DotA 2" }, { ID: "iceice", name: "Li Peng", age: 21, game: "DotA 2" }, { ID: "bLink", name: "Zhou Yang", age: 24, game: "DotA 2" }, { ID: "y`", name: "Zhang Yiping", age: 18, game: "DotA 2" }, { ID: "Faith_bian", name: "Zhang Ruida", age: 19, game: "DotA 2" }, { ID: "Shadow", name: "Chu Zeyu", age: 20, game: "DotA 2" }, { ID: "Aui_2000", name: "Kurtis Ling", age: 24, game: "DotA 2" }, { ID: "xiao8", name: "Ning Zhang", age: 27, game: "DotA 2" }, { ID: "Hao", name: "Zhihao Chen", age: 26, game: "DotA 2" }, { ID: "s4", name: "Gustav Magnusson", age: 25, game: "DotA 2" }, { ID: "Mu", name: "Zhang, Pan", age: 27, game: "DotA 2" }, { ID: "Puppey", name: "Clement Ivanov", age: 27, game: "DotA 2" }, { ID: "MiSeRy", name: "Rasmus Fillipsen", age: 26, game: "DotA 2" }, { ID: "N0tail", name: "Johan Sundstein", age: 23, game: "DotA 2" }, { ID: "Zai", name: "Ludwig Wahlberg", age: 19, game: "DotA 2" }, { ID: "Banana", name: "Wang Jiao", age: 23, game: "DotA 2" }, { ID: "Fly", name: "Tal Aizik", age: 24, game: "DotA 2" }, { ID: "SanSheng", name: "Zhaohui Wang", age: 28, game: "DotA 2" }, { ID: "w33", name: "Aliwi Omar", age: 22, game: "DotA 2" }, { ID: "KuroKy", name: "Kuro Takhasomi", age: 24, game: "DotA 2" }, { ID: "Fenrir", name: "Chao Lu", age: 28, game: "DotA 2" }, { ID: "iceiceice", name: "Daryl Pei Xiang Koh", age: 27, game: "DotA 2" }, { ID: "MMY!", name: "Zengrong Lei", age: 27, game: "DotA 2" }, { ID: "Arteezy", name: "Artour Babaev", age: 21, game: "DotA 2" }, { ID: "fy", name: "Linsen Xu", age: 22, game: "DotA 2" }, { ID: "Super", name: "Junhao Xie", age: 24, game: "DotA 2" }, { ID: "Sylar", name: "Jiajun Liu", age: 23, game: "DotA 2" }, { ID: "Resolut1on", name: "Roman Fominok", age: 20, game: "DotA 2" }, { ID: "LaNm", name: "Zhicheng Zhang", age: 26, game: "DotA 2" }, { ID: "JerAx", name: "Jesse Vainikka", age: 25, game: "DotA 2" }, { ID: "Cr1t", name: "Andreas Nielsen", age: 21, game: "DotA 2" }, { ID: "Agressif", name: "Zheng Sun", age: 25, game: "DotA 2" }, { ID: "Saksa", name: "Martin Sazdov", age: 22, game: "DotA 2" }, { ID: "Q", name: "Bin Fu", age: 21, game: "DotA 2" }, { ID: "Yao", name: "Zhengzheng Yao", age: 26, game: "DotA 2" }, { ID: "EternaLEnVy", name: "Jacky Mao", age: 26, game: "DotA 2" }, { ID: "Maybe", name: "Lu Yao", age: 21, game: "DotA 2" }, { ID: "rOtK", name: "Fan Bai", age: 25, game: "DotA 2" }, { ID: "MoonMeander", name: "David Tan", age: 25, game: "DotA 2" }, { ID: "Mushi", name: "Yee Fung Chai", age: 26, game: "DotA 2" }, { ID: "Miracle", name: "Amer Barqawi", age: 20, game: "DotA 2" }, { ID: "Faith", name: "Hongda Zeng", age: 25, game: "DotA 2" }, { ID: "Dendi", name: "Danil Ishutin", age: 27, game: "DotA 2" }, { ID: "Moo", name: "David Hull", age: 21, game: "DotA 2" }, { ID: "ChuaN", name: "Hock Chuan Wong", age: 25, game: "DotA 2" }, { ID: "garder", name: "Xinzhou Liu", age: 28, game: "DotA 2" }, { ID: "pieliedie", name: "Johan Astrom", age: 24, game: "DotA 2" }, { ID: "Loda", name: "Jonathan Berg", age: 29, game: "DotA 2" }, { ID: "Xz", name: "Zezhi Chen", age: 24, game: "DotA 2" }, { ID: "DDC", name: "Fa Ming Liang", age: 27, game: "DotA 2" }, { ID: "EGM", name: "Jerry Lundqvist", age: 26, game: "DotA 2" }, { ID: "Shiki", name: "Jiwei Huang", age: 24, game: "DotA 2" }, { ID: "XBOCT", name: "Oleksandr Dashkevych", age: 26, game: "DotA 2" }, { ID: "BurNIng", name: "Zhilei Xu", age: 29, game: "DotA 2" }, { ID: "Akke", name: "Joakim Akterhall", age: 29, game: "DotA 2" }, { ID: "AdmiralBulldog", name: "Henrik Ahnberg", age: 26, game: "DotA 2" }, { ID: "FATA", name: "Adrian Trinks", age: 24, game: "DotA 2" }, { ID: "QO", name: "Sunyeob Kim", age: 23, game: "DotA 2" }, { ID: "Ferrari_430", name: "Feichi Luo", age: 27, game: "DotA 2" }, { ID: "Febby", name: "Kim, Yong Min", age: 24, game: "DotA 2" }, { ID: "Ohaiyo", name: "Xin Khoo Chong", age: 24, game: "DotA 2" }, { ID: "Matumbaman", name: "Lasse Urpalainen", age: 22, game: "DotA 2" }, { ID: "MinD_ContRoL", name: "Ivan Ivanov", age: 22, game: "DotA 2" }, { ID: "kpii", name: "Damien Chok", age: 22, game: "DotA 2" }, { ID: "Lil", name: "Ilya Ilyuk", age: 21, game: "DotA 2" }, { ID: "KaKa", name: "Zhi Hu", age: 24, game: "DotA 2" }, { ID: "ana", name: "Anathan Pham", age: 17, game: "DotA 2" }, { ID: "DJ", name: "Djardel Jicko Mampusti", age: 22, game: "DotA 2" }, { ID: "MP", name: "Noah Pyo", age: 27, game: "DotA 2" }, { ID: "MidOne", name: "Zheng Yeik Nai", age: 28, game: "DotA 2" }, { ID: "Forev", name: "Sang Don Lee", age: 25, game: "DotA 2" }, { ID: "YYF", name: "Cen Jiang", age: 30, game: "DotA 2" }, { ID: "Funn1k", name: "Gleb Lipatnikov", age: 28, game: "DotA 2" }, { ID: "GoD", name: "Sergey Bragin", age: 25, game: "DotA 2" }, { ID: "END", name: "Yang Pu", age: 28, game: "DotA 2" }, { ID: "fng", name: "Artem Barshack", age: 21, game: "DotA 2" }, { ID: "DuBu", name: "Kim, Du Young", age: 24, game: "DotA 2" }, { ID: "DkPhobos", name: "Alexander Kucheria", age: 27, game: "DotA 2" }, { ID: "Cty", name: "Chen, Tianyu", age: 22, game: "DotA 2" }, { ID: "343", name: "Adam Shah", age: 26, game: "DotA 2" }, { ID: "eLeVeN", name: "Ren Yangwei", age: 21, game: "DotA 2" }, { ID: "Illidan", name: "Ilya Pevcaev", age: 25, game: "DotA 2" }, { ID: "oldchicken", name: "Zhiyong, Wang", age: 24, game: "DotA 2" }, { ID: "ArtStyle", name: "Ivan Antonov", age: 26, game: "DotA 2" }, { ID: "bOne7", name: "Pittner Armand", age: 26, game: "DotA 2" }, { ID: "KuKU", name: "Kuku Palad", age: 20, game: "DotA 2" }, { ID: "sam_H", name: "Sam Enojosa Hidalgo", age: 22, game: "DotA 2" }, { ID: "Xi", name: "Yinqi Luo", age: 26, game: "DotA 2" }, { ID: "Raven", name: "Marc Polo Luis Fausto", age: 18, game: "DotA 2" }, { ID: "Rabbit", name: "Zhang, Wang", age: 25, game: "DotA 2" }, { ID: "LighTofHeaveN", name: "Dmitriy Kupriyanov", age: 29, game: "DotA 2" }, { ID: "Zhou", name: "Yao Chen", age: 27, game: "DotA 2" }, { ID: "Solo", name: "Alexei Berezin", age: 26, game: "DotA 2" }, { ID: "mason", name: "Mason Venne", age: 25, game: "DotA 2" }, { ID: "Ryo", name: "Ryo Hasegawa", age: 24, game: "DotA 2" }, { ID: "Black^", name: "Dominik Reitmeier", age: 24, game: "DotA 2" }, { ID: "Noone", name: "Vladimir Minenko", age: 18, game: "DotA 2" }, { ID: "Faker", name: "Lee, Sang Hyeok", age: 21, game: "LoL" }, { ID: "Bengi", name: "Bae, Seong Ung", age: 23, game: "LoL" }, { ID: "Wolf", name: "Lee, Jae Wan", age: 20, game: "LoL" }, { ID: "Bang", name: "Bae, Jun Sik", age: 21, game: "LoL" }, { ID: "Duke", name: "Lee, Ho Seong", age: 22, game: "LoL" }, { ID: "Blank", name: "Kang, Sun Gu", age: 19, game: "LoL" }, { ID: "PawN", name: "Heo, Won Seok", age: 20, game: "LoL" }, { ID: "Mata", name: "Cho, Se Hyeong", age: 23, game: "LoL" }, { ID: "ClearLove", name: "Ming, Kai", age: 24, game: "LoL" }, { ID: "Looper", name: "Jang, Hyeong Seok", age: 24, game: "LoL" }, { ID: "Impact", name: "Jung, Eon Yeong", age: 22, game: "LoL" }, { ID: "imp", name: "Gu, Seung Bin", age: 22, game: "LoL" }, { ID: "bebe", name: "Cheng, Bo Wei", age: 26, game: "LoL" }, { ID: "DanDy", name: "Choi, In Kyu", age: 23, game: "LoL" }, { ID: "Deft", name: "Kim, Hyuk Kyu", age: 20, game: "LoL" }, { ID: "Peanut", name: "Han, Wang Ho", age: 19, game: "LoL" }, { ID: "Piglet", name: "Chae, Gwang Jin", age: 23, game: "LoL" }, { ID: "PoohManDu", name: "Lee, Jeong Hyeon", age: 26, game: "LoL" }, { ID: "PraY", name: "Kim, Jong In", age: 23, game: "LoL" }, { ID: "Koro1", name: "Tong, Yang", age: 23, game: "LoL" }, { ID: "Uzi", name: "Jian, Zihao", age: 20, game: "LoL" }, { ID: "Easyhoon", name: "Lee, Ji Hoon", age: 24, game: "LoL" }, { ID: "Stanley", name: "Wang, June Tsan", age: 26, game: "LoL" }, { ID: "Toyz", name: "Lau, Kurtis Wai Kin", age: 25, game: "LoL" }, { ID: "Ambition", name: "Kang, Chan Yong", age: 24, game: "LoL" }, { ID: "Lilballz", name: "Kuan Po Sung", age: 29, game: "LoL" }, { ID: "MiSTakE", name: "Chen, Hui Chung", age: 28, game: "LoL" }, { ID: "MaRin", name: "Jang, Gyeong Hwan", age: 26, game: "LoL" }, { ID: "Huni", name: "Heo, Seung Hoon", age: 19, game: "LoL" }, { ID: "GorillA", name: "Kang, Beom Hyeon", age: 22, game: "LoL" }, { ID: "Smeb", name: "Song, Kyung Ho", age: 22, game: "LoL" }, { ID: "Mlxg", name: "Liu, Shi Yu", age: 19, game: "LoL" }, { ID: "Meiko", name: "Tian, Ye", age: 19, game: "LoL" }, { ID: "kurO", name: "Lee, Seo Haeng", age: 23, game: "LoL" }, { ID: "Mithy", name: "Alfonso Aguirre Rodriguez", age: 22, game: "LoL" }, { ID: "xiaohu", name: "Li, Yuan Hao", age: 22, game: "LoL" }, { ID: "sOAZ", name: "Paul Boyer", age: 23, game: "LoL" }, { ID: "Zven", name: "Jesper Svenningsen", age: 19, game: "LoL" }, { ID: "YellOwStaR", name: "Bora Kim", age: 25, game: "LoL" }, { ID: "xPeke", name: "Enrique Cedeno Martinez", age: 25, game: "LoL" }, { ID: "Fzzf", name: "Feng, Zhuojun", age: 26, game: "LoL" }, { ID: "Zero", name: "Yoon, Kyung Sup", age: 19, game: "LoL" }, { ID: "Bjergsen", name: "Soren Bjerg", age: 21, game: "LoL" }, { ID: "SwordArt", name: "Hu, Shuo Jie", age: 20, game: "LoL" }, { ID: "Maple", name: "Huang, Yi Tang", age: 19, game: "LoL" }, { ID: "Crown", name: "Lee, Min Ho", age: 22, game: "LoL" }, { ID: "CuVee", name: "Lee, Seong Jin", age: 20, game: "LoL" }, { ID: "WildTurtle", name: "Jason Tran", age: 22, game: "LoL" }, { ID: "Dyrus", name: "Marcus Hill", age: 25, game: "LoL" }, { ID: "Core JJ", name: "Jo, Yong In", age: 23, game: "LoL" }, { ID: "Ruler", name: "Park, Jae Hyuk", age: 18, game: "LoL" }, { ID: "Wraith", name: "Kwon, Ji Min", age: 21, game: "LoL" }, { ID: "NaMei", name: "Zhu, Jia Wen", age: 23, game: "LoL" }, { ID: "Ryu", name: "Yoo, Sang Ook", age: 23, game: "LoL" }, { ID: "Sneaky", name: "Zachary Scuderi", age: 23, game: "LoL" }, { ID: "Lustboy", name: "Ham, Jang Sik", age: 23, game: "LoL" }, { ID: "Karsa", name: "Hung, Hau Hsuan", age: 20, game: "LoL" }, { ID: "PerkZ", name: "Luka Perkovi?", age: 18, game: "LoL" }, { ID: "Mouse", name: "Chen, Yu Hao", age: 24, game: "LoL" }, { ID: "Meteos", name: "William Hartman", age: 24, game: "LoL" }, { ID: "Trick", name: "Kim, Gang Yun", age: 25, game: "LoL" }, { ID: "inSec", name: "Choi, In Seok", age: 24, game: "LoL" }, { ID: "xiye", name: "Su, Han Wei", age: 23, game: "LoL" }, { ID: "Odoamne", name: "Andrei Pascu", age: 26, game: "LoL" }, { ID: "dade", name: "Bae, Eo Jin", age: 22, game: "LoL" }, { ID: "Ich", name: "Alexey Ichetovkin", age: 25, game: "LoL" }, { ID: "Mystic", name: "Jin, Sung Joon", age: 24, game: "LoL" }, { ID: "Cyanide", name: "Lauri Happonen", age: 22, game: "LoL" }, { ID: "kid", name: "Ge, Yan", age: 19, game: "LoL" }, { ID: "Zzitai", name: "Liu, Zhihao", age: 19, game: "LoL" }, { ID: "Expect", name: "Gi, Dae Han", age: 24, game: "LoL" }, { ID: "Gogoing", name: "Gao, Di Ping", age: 25, game: "LoL" }, { ID: "WeiXiao", name: "Gao, Xue Cheng", age: 25, game: "LoL" }, { ID: "Rekkles", name: "Martin Larsson", age: 20, game: "LoL" }, { ID: "westdoor", name: "Liu, Shu Wei", age: 23, game: "LoL" }, { ID: "MMD", name: "Yau, Li Hung", age: 22, game: "LoL" }, { ID: "LoveLing", name: "Yin, Le", age: 24, game: "LoL" }, { ID: "Cool", name: "Yu, Jia Jun", age: 23, game: "LoL" }, { ID: "Acorn", name: "Choi, Cheon Ju", age: 27, game: "LoL" }, { ID: "Svenskeren", name: "Dennis Johnsen", age: 21, game: "LoL" }, { ID: "san", name: "Guo, Jun Liang", age: 26, game: "LoL" }, { ID: "MadLife", name: "Hong, Min Gi", age: 24, game: "LoL" }, { ID: "U", name: "Ceng, Long", age: 22, game: "LoL" }, { ID: "wuxx", name: "Wang, Cheng", age: 22, game: "LoL" }, { ID: "Diamondprox", name: "Daniel Reshetnikov", age: 24, game: "LoL" }, { ID: "CaoMei", name: "Wei, Han Dong", age: 25, game: "LoL" }, { ID: "Shy", name: "Park, Sang Myun", age: 26, game: "LoL" }, { ID: "Scout", name: "Lee, Ye Chan", age: 19, game: "LoL" }, { ID: "Darien", name: "Eugene Mazaev", age: 26, game: "LoL" }, { ID: "Genja", name: "Eugene Andryushin", age: 28, game: "LoL" }, { ID: "Misaya", name: "Yu, Jingxi", age: 24, game: "LoL" }, { ID: "watch", name: "Cho, Jae Geol", age: 25, game: "LoL" }, { ID: "Balls", name: "An Le", age: 23, game: "LoL" }, { ID: "Hai", name: "Hai Lam", age: 24, game: "LoL" }, { ID: "Doublelift", name: "Peter Peng", age: 24, game: "LoL" }, { ID: "LemonNation", name: "Daerek Hart", age: 28, game: "LoL" }, { ID: "Condi", name: "Xiang, Ren Jie", age: 25, game: "LoL" }, { ID: "Wickd", name: "Mike Peterson", age: 23, game: "LoL" }, { ID: "Jankos", name: "Marcin Jankowski", age: 22, game: "LoL" }, { ID: "Xpecial", name: "Alex Chu", age: 24, game: "LoL" }, { ID: "", name: "Joe Flacco", age: 32, game: "NFL" }, { ID: "", name: "Carson Palmer", age: 37, game: "NFL" }, { ID: "", name: "Kirk Cousins", age: 28, game: "NFL" }, { ID: "", name: "Matt Ryan", age: 32, game: "NFL" }, { ID: "", name: "Justin Houston", age: 28, game: "NFL" }, { ID: "", name: "Matthew Stafford", age: 29, game: "NFL" }, { ID: "", name: "Von Miller", age: 28, game: "NFL" }, { ID: "", name: "Ryan Tannehill", age: 29, game: "NFL" }, { ID: "", name: "Aaron Rodgers", age: 33, game: "NFL" }, { ID: "", name: "Cam Newton", age: 28, game: "NFL" }, { ID: "", name: "Philip Rivers", age: 35, game: "NFL" }, { ID: "", name: "Josh Norman", age: 29, game: "NFL" }, { ID: "", name: "Eli Manning", age: 36, game: "NFL" }, { ID: "", name: "Andrew Luck", age: 27, game: "NFL" }, { ID: "", name: "Ndamukong Suh", age: 30, game: "NFL" }, { ID: "", name: "Drew Brees", age: 38, game: "NFL" }, { ID: "", name: "Russell Wilson", age: 28, game: "NFL" }, { ID: "", name: "Ben Roethlisberger", age: 35, game: "NFL" }, { ID: "", name: "Muhammad Wilkerson", age: 27, game: "NFL" }, { ID: "", name: "Sam Bradford", age: 29, game: "NFL" }, { ID: "", name: "Dez Bryant", age: 28, game: "NFL" }, { ID: "", name: "Alex Smith", age: 33, game: "NFL" }, { ID: "", name: "Trumaine Johnson", age: 27, game: "NFL" }, { ID: "", name: "Marcell Dareus", age: 27, game: "NFL" }, { ID: "", name: "Brock Osweiler", age: 26, game: "NFL" }, { ID: "", name: "Olivier Vernon", age: 26, game: "NFL" }, { ID: "", name: "Larry Fitzgerald", age: 33, game: "NFL" }, { ID: "", name: "Andy Dalton", age: 29, game: "NFL" }, { ID: "", name: "Derek Carr", age: 26, game: "NFL" }, { ID: "", name: "Malik Jackson", age: 27, game: "NFL" }, { ID: "", name: "Trent Williams", age: 29, game: "NFL" }, { ID: "", name: "Clay Matthews", age: 31, game: "NFL" }, { ID: "", name: "Janoris Jenkins", age: 28, game: "NFL" }, { ID: "", name: "Tavon Austin", age: 26, game: "NFL" }, { ID: "", name: "Melvin Ingram", age: 28, game: "NFL" }, { ID: "", name: "J.J. Watt", age: 28, game: "NFL" }, { ID: "", name: "Joe Haden", age: 28, game: "NFL" }, { ID: "", name: "Cordy Glenn", age: 27, game: "NFL" }, { ID: "", name: "Mike Glennon", age: 27, game: "NFL" }, { ID: "", name: "Tom Brady", age: 40, game: "NFL" }, { ID: "", name: "Julio Jones", age: 28, game: "NFL" }, { ID: "", name: "Gerald McCoy", age: 29, game: "NFL" }, { ID: "", name: "Patrick Peterson", age: 27, game: "NFL" }, { ID: "", name: "Richard Sherman", age: 29, game: "NFL" }, { ID: "", name: "Antonio Brown", age: 29, game: "NFL" }, { ID: "", name: "A.J. Green", age: 29, game: "NFL" }, { ID: "", name: "Kelechi Osemele", age: 28, game: "NFL" }, { ID: "", name: "Anthony Castonzo", age: 28, game: "NFL" }, { ID: "", name: "Luke Kuechly", age: 26, game: "NFL" }, { ID: "", name: "Ezekiel Ansah", age: 28, game: "NFL" }, { ID: "", name: "Randall Cobb", age: 26, game: "NFL" }, { ID: "", name: "Jimmy Smith", age: 29, game: "NFL" }, { ID: "", name: "DeSean Jackson", age: 30, game: "NFL" }, { ID: "", name: "Jason Witten", age: 35, game: "NFL" }, { ID: "", name: "Joel Bitonio", age: 25, game: "NFL" }, { ID: "", name: "Le'Veon Bell", age: 25, game: "NFL" }, { ID: "", name: "Jamie Collins", age: 27, game: "NFL" }, { ID: "", name: "Cameron Jordan", age: 28, game: "NFL" }, { ID: "", name: "Demaryius Thomas", age: 29, game: "NFL" }, { ID: "", name: "Aqib Talib", age: 31, game: "NFL" }, { ID: "", name: "Ryan Kerrigan", age: 28, game: "NFL" }, { ID: "", name: "Jordy Nelson", age: 32, game: "NFL" }, { ID: "", name: "Joe Thomas", age: 32, game: "NFL" }, { ID: "", name: "Michael Bennett", age: 31, game: "NFL" }, { ID: "", name: "Nate Solder", age: 29, game: "NFL" }, { ID: "", name: "Brandon Linder", age: 25, game: "NFL" }, { ID: "", name: "Joe Staley", age: 32, game: "NFL" }, { ID: "", name: "Maurkice Pouncey", age: 28, game: "NFL" }, { ID: "", name: "David DeCastro", age: 27, game: "NFL" }, { ID: "", name: "Mark Barron", age: 27, game: "NFL" }, { ID: "", name: "Michael Brockers", age: 26, game: "NFL" }, { ID: "", name: "Devin McCourty", age: 29, game: "NFL" }, { ID: "", name: "Robert Quinn", age: 27, game: "NFL" }, { ID: "", name: "Darius Slay", age: 26, game: "NFL" }, { ID: "", name: "Gabe Jackson", age: 26, game: "NFL" }, { ID: "", name: "Geno Atkins", age: 29, game: "NFL" }, { ID: "", name: "Damon Harrison", age: 28, game: "NFL" }, { ID: "", name: "Calais Campbell", age: 30, game: "NFL" }, { ID: "", name: "Jerry Hughes", age: 28, game: "NFL" }, { ID: "", name: "Xavier Rhodes", age: 27, game: "NFL" }, { ID: "", name: "Earl Thomas", age: 28, game: "NFL" }, { ID: "", name: "Cameron Heyward", age: 28, game: "NFL" }, { ID: "", name: "Mike Daniels", age: 28, game: "NFL" }, { ID: "", name: "Greg Olsen", age: 32, game: "NFL" }, { ID: "", name: "Tyrone Crawford", age: 27, game: "NFL" }, { ID: "", name: "Vontae Davis", age: 29, game: "NFL" }, { ID: "", name: "Jimmy Graham", age: 30, game: "NFL" }, { ID: "", name: "T.Y. Hilton", age: 27, game: "NFL" }, { ID: "", name: "Johnathan Hankins", age: 25, game: "NFL" }, { ID: "", name: "Kawann Short", age: 28, game: "NFL" }, { ID: "", name: "Jay Cutler", age: 34, game: "NFL" }, { ID: "", name: "Chandler Jones", age: 27, game: "NFL" }, { ID: "", name: "Jared Veldheer", age: 30, game: "NFL" }, { ID: "", name: "Jabaal Sheard", age: 28, game: "NFL" }, { ID: "", name: "Chris Harris", age: 28, game: "NFL" }, { ID: "", name: "Lane Johnson", age: 27, game: "NFL" }, { ID: "", name: "Tyrod Taylor", age: 28, game: "NFL" }, { ID: "", name: "Mike Iupati", age: 30, game: "NFL" }, { ID: "", name: "Jurrell Casey", age: 27, game: "NFL" }, { ID: "", name: "Doug Baldwin", age: 28, game: "NFL" }];
-      var colorPalette = ["#0b7640", "#51385f", "#d8bc32", "#8c1f0b", "#235160", "#500700", "#193858"];
+      var colorPalette = ["#0b7640", "#51385f", "#d8bc32", "#8c1f0b", "#235160", "#500700", "#193858", "#760b41", "#465f38", "#324ed8", "#0b788c", "#603223", "#004950", "#583919", "#41760b", "#400b76", "#1a3004", "#77770a", "#be6810", "#a60e59"];
 
       return _react2.default.createElement(
         "div",
@@ -10282,6 +10325,7 @@ var Earnings = function (_React$Component) {
             data: earnings_data,
             xKey: "age",
             yKey: "earnings",
+            groupKey: "country",
             graphTitle: "Scatter Plot of Earnings vs Age",
             xTitle: "Player Age",
             yTitle: "Player Earnings ($)",
@@ -10296,10 +10340,9 @@ var Earnings = function (_React$Component) {
               lineWidth: 2,
               lineOpacity: 1
             },
-            legendStyle: {
-              fontColor: "#979797",
-              showBorder: false
-            }
+            tooltip: true,
+            showLegend: false,
+            tooltipContents: this.fillTooltip
           }),
           _react2.default.createElement("br", null),
           _react2.default.createElement("br", null),
@@ -10382,7 +10425,7 @@ var PrizePools = function (_React$Component) {
   _createClass(PrizePools, [{
     key: "render",
     value: function render() {
-      var data = [{ game: "DotA 2", year: "2011", prizepool: 1600000 }, { game: "DotA 2", year: "2012", prizepool: 1600000 }, { game: "DotA 2", year: "2013", prizepool: 2874380 }, { game: "DotA 2", year: "2014", prizepool: 10931105 }, { game: "DotA 2", year: "2015", prizepool: 18429613 }, { game: "DotA 2", year: "2016", prizepool: 20770460 }, { game: "DotA 2", year: "2017", prizepool: 23989300 }, { game: "LoL", year: "2011", prizepool: 100000 }, { game: "LoL", year: "2012", prizepool: 1970000 }, { game: "LoL", year: "2013", prizepool: 2050000 }, { game: "LoL", year: "2014", prizepool: 2130000 }, { game: "LoL", year: "2015", prizepool: 2130000 }, { game: "LoL", year: "2016", prizepool: 5070000 }, { game: "Smite", year: "2015", prizepool: 2600000 }, { game: "Smite", year: "2016", prizepool: 1000000 }, { game: "Smite", year: "2017", prizepool: 1000000 }, { game: "Halo 5", year: "2016", prizepool: 2500000 }, { game: "Halo 5", year: "2017", prizepool: 1000000 }, { game: "CS:GO", year: "2016", prizepool: 1410000 }, { game: "CS:GO", year: "2017", prizepool: 1000000 }, { game: "Masters", year: "2011", prizepool: 8000000 }, { game: "Masters", year: "2012", prizepool: 8000000 }, { game: "Masters", year: "2013", prizepool: 8000000 }, { game: "Masters", year: "2014", prizepool: 9000000 }, { game: "Masters", year: "2015", prizepool: 10000000 }, { game: "Masters", year: "2016", prizepool: 10000000 }];
+      var data = [{ game: "DotA 2", year: "2011", prizepool: 1600000 }, { game: "DotA 2", year: "2012", prizepool: 1600000 }, { game: "DotA 2", year: "2013", prizepool: 2874380 }, { game: "DotA 2", year: "2014", prizepool: 10931105 }, { game: "DotA 2", year: "2015", prizepool: 18429613 }, { game: "DotA 2", year: "2016", prizepool: 20770460 }, { game: "DotA 2", year: "2017", prizepool: 24787916 }, { game: "LoL", year: "2011", prizepool: 100000 }, { game: "LoL", year: "2012", prizepool: 1970000 }, { game: "LoL", year: "2013", prizepool: 2050000 }, { game: "LoL", year: "2014", prizepool: 2130000 }, { game: "LoL", year: "2015", prizepool: 2130000 }, { game: "LoL", year: "2016", prizepool: 5070000 }, { game: "Smite", year: "2015", prizepool: 2600000 }, { game: "Smite", year: "2016", prizepool: 1000000 }, { game: "Smite", year: "2017", prizepool: 1000000 }, { game: "Halo 5", year: "2016", prizepool: 2500000 }, { game: "Halo 5", year: "2017", prizepool: 1000000 }, { game: "CS:GO", year: "2016", prizepool: 1410000 }, { game: "CS:GO", year: "2017", prizepool: 1000000 }, { game: "Masters", year: "2011", prizepool: 8000000 }, { game: "Masters", year: "2012", prizepool: 8000000 }, { game: "Masters", year: "2013", prizepool: 8000000 }, { game: "Masters", year: "2014", prizepool: 9000000 }, { game: "Masters", year: "2015", prizepool: 10000000 }, { game: "Masters", year: "2016", prizepool: 10000000 }];
       var colorPalette = ["#500700", "#193858", "#0b7640", "#51385f", "#d8bc32", "#8c1f0b", "#235160"];
 
       return _react2.default.createElement(
@@ -10421,7 +10464,31 @@ var PrizePools = function (_React$Component) {
         _react2.default.createElement(
           "div",
           { className: _Block2.default.rightBlock },
-          "Something about prizepools here"
+          _react2.default.createElement(
+            "p",
+            { className: _Block2.default.text },
+            "Sports and E-Sports alike hold tournaments featuring grand prize pools, in an effort to draw the toughest competitors and biggest crowds. Here, I compare the prize pools for the six largest tournaments of six popular sports. We can then analyze the trends over time with the use of a line chart.",
+            _react2.default.createElement("br", null),
+            " ",
+            _react2.default.createElement("br", null),
+            "Immediately, one may notice that the prize pool for DotA 2 towers above other popular E-Sports, but also above traditional tournaments like the Masters in professional golf. The tournament featured here for DotA 2 is",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            ". Held once a year in Seattle and hosted by Valve, it regularly holds the position for largest prize pool in any E-Sport, and payouts from combined payouts from all Internationals are higher than the combined payouts from the next five largest E-Sports over recent years.",
+            _react2.default.createElement("br", null),
+            " ",
+            _react2.default.createElement("br", null),
+            "A popular feature for E-Sports tournaments that is not often seen in standard sports operations is the ability for fans to contribute to the prize pool, either directly or indirectly through in-game purchases. This is a major reason for the prize pool size of E-Sports tournaments. DotA 2 uses this technique especially well, and so we see immense growth for ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            "'s prize pool. Other E-Sports such as Halo and Smite have not been able to consistently deliver large prize pools. And prize pool increases in mainstream sports are often only as a result of the tournament organizers and not the fan base. The ability for DotA 2 fans to foster the game's growth is a major reason for it's success in the E-Sports scene. Other E-Sports, and possibly other mainstream sports, just cannot keep up with the growth of DotA 2."
+          )
         )
       );
     }
@@ -10477,7 +10544,7 @@ var Tournaments = function (_React$Component) {
   _createClass(Tournaments, [{
     key: "render",
     value: function render() {
-      var data = [{ organizer: "Valve", series: "The International", tournament: "2011", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2012", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2013", prizepool: 2874380 }, { organizer: "Valve", series: "The International", tournament: "2014", prizepool: 10931105 }, { organizer: "Valve", series: "The International", tournament: "2015", prizepool: 18429613 }, { organizer: "Valve", series: "The International", tournament: "2016", prizepool: 20770460 }, { organizer: "Valve", series: "The International", tournament: "2017", prizepool: 23987047 }, { organizer: "Valve", series: "Majors", tournament: "Kiev 2017", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Boston 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Manila 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Shanghai 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Frankfurt 2015", prizepool: 3000000 }, { organizer: "Third Party", series: "Epicenter", tournament: "2017", prizepool: 500000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 3", prizepool: 300000 }, { organizer: "Third Party", series: "ESL One", tournament: "Hamburg 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2017", prizepool: 250000 }, { organizer: "Third Party", series: "ESL One", tournament: "Genting 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 5", prizepool: 139860 }, { organizer: "Third Party", series: "Summit", tournament: "Season 7", prizepool: 100000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 6", prizepool: 100000 }, { organizer: "Third Party", series: "Mars League", tournament: "Autumn 2016", prizepool: 250000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 2", prizepool: 300000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 5", prizepool: 101044 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2016", prizepool: 314545 }, { organizer: "Third Party", series: "Epicenter", tournament: "2016", prizepool: 500000 }, { organizer: "Third Party", series: "ESL One", tournament: "Manila 2016", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 4", prizepool: 195274 }, { organizer: "Third Party", series: "Mars League", tournament: "Winter 2015", prizepool: 277668 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 1", prizepool: 302277 }, { organizer: "Third Party", series: "Summit", tournament: "Season 4", prizepool: 114866 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2015", prizepool: 286622 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2015", prizepool: 286622 }, { organizer: "Third Party", series: "Mars League", tournament: "Spring 2015", prizepool: 241815 }, { organizer: "Third Party", series: "Summit", tournament: "Season 3", prizepool: 271685 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 12", prizepool: 150000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 3", prizepool: 265378 }, { organizer: "Third Party", series: "Summit", tournament: "Season 2", prizepool: 129258 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 11", prizepool: 86521 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2014", prizepool: 141010 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 2", prizepool: 80589 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 10", prizepool: 273980 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2014", prizepool: 210900 }, { organizer: "Third Party", series: "Summit", tournament: "Season 1", prizepool: 132350 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2014", prizepool: 24046 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 9", prizepool: 190162 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 8", prizepool: 124000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Kick-Off", prizepool: 50000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 1", prizepool: 265257 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 2", prizepool: 115560 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 3", prizepool: 149582 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 4", prizepool: 150000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 5", prizepool: 100000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 6", prizepool: 185000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 7", prizepool: 175000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 7", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 6", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 5", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 4", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 3", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 2", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 1", prizepool: 15000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 1", prizepool: 3000 }];
+      var data = [{ organizer: "Valve", series: "The International", tournament: "2011", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2012", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2013", prizepool: 2874380 }, { organizer: "Valve", series: "The International", tournament: "2014", prizepool: 10931105 }, { organizer: "Valve", series: "The International", tournament: "2015", prizepool: 18429613 }, { organizer: "Valve", series: "The International", tournament: "2016", prizepool: 20770460 }, { organizer: "Valve", series: "The International", tournament: "2017", prizepool: 24787916 }, { organizer: "Valve", series: "Majors", tournament: "Kiev 2017", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Boston 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Manila 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Shanghai 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Frankfurt 2015", prizepool: 3000000 }, { organizer: "Third Party", series: "Epicenter", tournament: "2017", prizepool: 500000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 3", prizepool: 300000 }, { organizer: "Third Party", series: "ESL One", tournament: "Hamburg 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2017", prizepool: 250000 }, { organizer: "Third Party", series: "ESL One", tournament: "Genting 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 5", prizepool: 139860 }, { organizer: "Third Party", series: "Summit", tournament: "Season 7", prizepool: 100000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 6", prizepool: 100000 }, { organizer: "Third Party", series: "Mars League", tournament: "Autumn 2016", prizepool: 250000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 2", prizepool: 300000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 5", prizepool: 101044 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2016", prizepool: 314545 }, { organizer: "Third Party", series: "Epicenter", tournament: "2016", prizepool: 500000 }, { organizer: "Third Party", series: "ESL One", tournament: "Manila 2016", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 4", prizepool: 195274 }, { organizer: "Third Party", series: "Mars League", tournament: "Winter 2015", prizepool: 277668 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 1", prizepool: 302277 }, { organizer: "Third Party", series: "Summit", tournament: "Season 4", prizepool: 114866 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2015", prizepool: 286622 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2015", prizepool: 286622 }, { organizer: "Third Party", series: "Mars League", tournament: "Spring 2015", prizepool: 241815 }, { organizer: "Third Party", series: "Summit", tournament: "Season 3", prizepool: 271685 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 12", prizepool: 150000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 3", prizepool: 265378 }, { organizer: "Third Party", series: "Summit", tournament: "Season 2", prizepool: 129258 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 11", prizepool: 86521 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2014", prizepool: 141010 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 2", prizepool: 80589 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 10", prizepool: 273980 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2014", prizepool: 210900 }, { organizer: "Third Party", series: "Summit", tournament: "Season 1", prizepool: 132350 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2014", prizepool: 24046 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 9", prizepool: 190162 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 8", prizepool: 124000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Kick-Off", prizepool: 50000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 1", prizepool: 265257 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 2", prizepool: 115560 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 3", prizepool: 149582 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 4", prizepool: 150000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 5", prizepool: 100000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 6", prizepool: 185000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 7", prizepool: 175000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 7", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 6", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 5", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 4", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 3", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 2", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 1", prizepool: 15000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 1", prizepool: 3000 }];
       var colorPalette = ["#500700", "#193858", "#0b7640", "#51385f", "#d8bc32", "#8c1f0b", "#235160"];
 
       return _react2.default.createElement(
@@ -11707,13 +11774,14 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, ".Block__container___1KJIg {\n  overflow: auto;\n}\n\n.Block__leftBlock___3tRPP {\n  width: 50%;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.Block__rightBlock___T35YA {\n  width: 40%;\n  display: inline-block;\n  float: right;\n  vertical-align: top;\n}\n", ""]);
+exports.push([module.i, ".Block__container___1KJIg {\n  overflow: auto;\n}\n\n.Block__leftBlock___3tRPP {\n  width: 55%;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.Block__rightBlock___T35YA {\n  width: 40%;\n  display: inline-block;\n  float: right;\n  vertical-align: top;\n}\n\n.Block__text___bdazF {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n@media all and (max-width: 800px){\n  .Block__leftBlock___3tRPP {\n    width: 100%;\n  }\n  .Block__rightBlock___T35YA {\n    width: 100%;\n    float: none;\n  }\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"container": "Block__container___1KJIg",
 	"leftBlock": "Block__leftBlock___3tRPP",
-	"rightBlock": "Block__rightBlock___T35YA"
+	"rightBlock": "Block__rightBlock___T35YA",
+	"text": "Block__text___bdazF"
 };
 
 /***/ }),
@@ -11725,7 +11793,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);", ""]);
 
 // module
-exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  width: 100%;\n  font-family: \"Radiance\", \"Open Sans\", \"Roboto\", sans-serif;\n  color: #7d7d7d;\n  background-color: #2b2b2b;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0;\n  padding: 0;\n  color: #979797;\n}\n\nhr {\n  border: 0;\n  height: 0;\n  border-top: 2px solid #303030;\n}\n\na {\n  color: #b2b9b7;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}\n\n.app__wrapper___1OYwg {\n  min-height: 100%;\n}\n\n.app__main___xN68G {\n  overflow: auto;\n  padding-bottom: 40px;\n}\n\n.app__heading___224PS {\n  margin: 0;\n  border-bottom: 1px solid #303030;\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  box-shadow: 0px 6px 20px 2px #121212;\n}\n\n.app__headingContents___2-M4a {\n  width: 80%;\n  margin: auto;\n  padding: 14px 0px;\n}\n\n.app__headingText___LW-NM {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.app__headingPic___1yndO {\n  display: inline-block;\n  vertical-align: middle;\n  margin-right: 5px;\n}\n\n.app__content___37BGB {\n  width: 80%;\n  margin: auto;\n}\n\n.app__panel___12sux {\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  margin: 20px 0;\n  padding: 15px 20px;\n}\n\n.app__text___1HXxp {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n.app__footing___3AllU {\n  background-image: linear-gradient( to bottom, #1c1c1c, #121212, #090909, #000000 );\n  border-top: 1px solid #303030;\n  box-shadow: 0px -6px 20px -2px #121212;\n  width: 100%;\n  position: relative;\n  margin-top: -41px;\n  height: 40px;\n  clear: both;\n}\n\n.app__footingContents___26DHI {\n  width: 80%;\n  margin: auto;\n  padding: 10px 0 0 0;\n}\n\n.app__footingText___ZAVxu {\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 16px;\n}\n\n.app__footingPic___1273p {\n  width: 20px;\n  margin-right: 2px;\n  display: inline-block;\n  vertical-align: middle;\n}\n", ""]);
+exports.push([module.i, "html, body {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  width: 100%;\n  font-family: \"Radiance\", \"Open Sans\", \"Roboto\", sans-serif;\n  color: #7d7d7d;\n  background-color: #2b2b2b;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0;\n  padding: 0;\n  color: #979797;\n}\n\nhr {\n  border: 0;\n  height: 0;\n  border-top: 2px solid #303030;\n}\n\na {\n  color: #b2b9b7;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}\n\n.app__wrapper___1OYwg {\n  min-height: 100%;\n}\n\n.app__main___xN68G {\n  overflow: auto;\n  padding-bottom: 40px;\n}\n\n.app__heading___224PS {\n  margin: 0;\n  border-bottom: 1px solid #303030;\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  box-shadow: 0px 6px 20px 2px #121212;\n}\n\n.app__headingContents___2-M4a {\n  width: 80%;\n  margin: auto;\n  padding: 14px 0px;\n}\n\n.app__headingText___LW-NM {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.app__headingPic___1yndO {\n  display: inline-block;\n  vertical-align: middle;\n  margin-right: 5px;\n}\n\n.app__content___37BGB {\n  width: 80%;\n  margin: auto;\n}\n\n.app__panel___12sux {\n  background-image: linear-gradient( to top, #1c1c1c, #121212, #090909, #000000 );\n  margin: 20px 0;\n  padding: 15px 20px;\n}\n\n.app__text___1HXxp {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n.app__footing___3AllU {\n  background-image: linear-gradient( to bottom, #1c1c1c, #121212, #090909, #000000 );\n  border-top: 1px solid #303030;\n  box-shadow: 0px -6px 20px -2px #121212;\n  width: 100%;\n  position: relative;\n  margin-top: -41px;\n  height: 40px;\n  clear: both;\n}\n\n.app__footingContents___26DHI {\n  width: 80%;\n  margin: auto;\n  padding: 10px 0 0 0;\n}\n\n.app__footingText___ZAVxu {\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 16px;\n}\n\n.app__footingPic___1273p {\n  width: 20px;\n  margin-right: 2px;\n  display: inline-block;\n  vertical-align: middle;\n}\n\n@media all and (max-width: 800px) {\n  .app__headingText___LW-NM {\n    font-size: 24px;\n  }\n  .app__panel___12sux h2 {\n    font-size: 18px;\n  }\n  .app__text___1HXxp {\n    font-size: 12px;\n  }\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -52936,7 +53004,9 @@ var Point = function (_React$Component) {
         function (style) {
           return _react2.default.createElement("circle", {
             cx: style.x, cy: style.y, r: style.radius,
-            stroke: _this2.props.color, fill: _this2.props.color });
+            stroke: _this2.props.color, fill: _this2.props.color,
+            onMouseOver: _this2.props.activateTooltip.bind(_this2, _this2.props.raw),
+            onMouseOut: _this2.props.deactivateTooltip.bind(_this2) });
         }
       );
     }
@@ -52963,8 +53033,11 @@ var PointSeries = function (_React$Component2) {
         var point = this.props.points[i];
         series.push(_react2.default.createElement(Point, { key: this.props.group + i,
           x: point.x, y: point.y, radius: point.r,
+          raw: point.raw,
           equation: this.props.equation, color: point.color,
-          initialAnimation: this.props.initialAnimation }));
+          initialAnimation: this.props.initialAnimation,
+          activateTooltip: this.props.activateTooltip,
+          deactivateTooltip: this.props.deactivateTooltip }));
       }
 
       return _react2.default.createElement(
@@ -53066,7 +53139,13 @@ var SeriesContainer = function (_React$Component3) {
                 } else {
                   x = (dataPoint[this.props.xKey] - this.props.minX) * xUnit;
                 }
-                set.push({ x: x, y: y, r: dataPoint.radius, color: this.props.color(i, groups[i]) });
+                set.push({
+                  x: x,
+                  y: y,
+                  r: dataPoint.radius,
+                  color: this.props.color(i, groups[i]),
+                  raw: dataPoint
+                });
                 sumX += x;
                 sumY += y;
                 sumXY += x * y;
@@ -53109,7 +53188,13 @@ var SeriesContainer = function (_React$Component3) {
               y = (this.props.maxY - _dataPoint[this.props.yKey]) * yUnit;
             }
             x = (_dataPoint[this.props.xKey] - this.props.minX) * xUnit;
-            set.push({ x: x, y: y, r: _dataPoint.radius, color: this.props.color(0) });
+            set.push({
+              x: x,
+              y: y,
+              r: _dataPoint.radius,
+              color: this.props.color(0),
+              raw: _dataPoint
+            });
             sumX += x;
             sumY += y;
             sumXY += x * y;
@@ -53148,7 +53233,9 @@ var SeriesContainer = function (_React$Component3) {
 
           series.push(_react2.default.createElement(PointSeries, { key: member.group, points: member.points,
             group: member.group, equation: eq,
-            initialAnimation: this.props.initialAnimation }));
+            initialAnimation: this.props.initialAnimation,
+            activateTooltip: this.props.activateTooltip,
+            deactivateTooltip: this.props.deactivateTooltip }));
         }
       } catch (err) {
         _didIteratorError3 = true;
@@ -53213,10 +53300,82 @@ var ScatterPlot = function (_React$Component4) {
   function ScatterPlot() {
     _classCallCheck(this, ScatterPlot);
 
-    return _possibleConstructorReturn(this, (ScatterPlot.__proto__ || Object.getPrototypeOf(ScatterPlot)).apply(this, arguments));
+    var _this6 = _possibleConstructorReturn(this, (ScatterPlot.__proto__ || Object.getPrototypeOf(ScatterPlot)).call(this));
+
+    _this6.state = {
+      tooltipContents: null,
+      mouseOver: false,
+      mouseX: null,
+      mouseY: null
+    };
+    return _this6;
   }
 
   _createClass(ScatterPlot, [{
+    key: "activateTooltip",
+    value: function activateTooltip(data) {
+      var newContents = void 0;
+      if (this.props.tooltipContents) {
+        newContents = this.props.tooltipContents(data);
+      } else {
+        newContents = _react2.default.createElement(
+          "div",
+          null,
+          _react2.default.createElement(
+            "span",
+            null,
+            this.props.xKey,
+            ": ",
+            data[this.props.xKey]
+          ),
+          _react2.default.createElement("br", null),
+          _react2.default.createElement(
+            "span",
+            null,
+            this.props.yKey,
+            ": ",
+            data[this.props.yKey]
+          ),
+          _react2.default.createElement("br", null),
+          data[this.props.groupKey] && _react2.default.createElement(
+            "span",
+            null,
+            this.props.groupKey,
+            ": ",
+            data[this.props.groupKey],
+            _react2.default.createElement("br", null)
+          ),
+          data[this.props.weightKey] && _react2.default.createElement(
+            "span",
+            null,
+            this.props.weightKey,
+            ": ",
+            data[this.props.weightKey],
+            _react2.default.createElement("br", null)
+          )
+        );
+      }
+      this.setState({
+        tooltipContents: newContents,
+        mouseOver: true
+      });
+    }
+  }, {
+    key: "deactivateTooltip",
+    value: function deactivateTooltip() {
+      this.setState({
+        mouseOver: false
+      });
+    }
+  }, {
+    key: "updateMousePos",
+    value: function updateMousePos(e) {
+      this.setState({
+        mouseX: e.pageX,
+        mouseY: e.pageY - 10
+      });
+    }
+  }, {
     key: "getLegend",
     value: function getLegend() {
       var _this7 = this;
@@ -53305,13 +53464,25 @@ var ScatterPlot = function (_React$Component4) {
           groupKey: this.props.groupKey, weightKey: this.props.weightKey,
           minRadius: this.props.minRadius, maxRadius: this.props.maxRadius,
           showTrendline: this.props.showTrendline, color: this.colorPoints.bind(this),
-          style: this.props.graphStyle, initialAnimation: this.props.initialAnimation })
+          style: this.props.graphStyle, initialAnimation: this.props.initialAnimation,
+          activateTooltip: this.activateTooltip.bind(this),
+          deactivateTooltip: this.deactivateTooltip.bind(this) })
       );
 
       return _react2.default.createElement(
-        "svg",
-        { width: this.props.width, height: this.props.height },
-        graph
+        "div",
+        { onMouseMove: this.props.tooltip ? this.updateMousePos.bind(this) : null },
+        this.props.tooltip && _react2.default.createElement(_replotCore.Tooltip, {
+          x: this.state.mouseX, y: this.state.mouseY,
+          active: this.state.mouseOver,
+          contents: this.state.tooltipContents,
+          colorScheme: this.props.tooltipColor
+        }),
+        _react2.default.createElement(
+          "svg",
+          { width: this.props.width, height: this.props.height },
+          graph
+        )
       );
     }
   }]);

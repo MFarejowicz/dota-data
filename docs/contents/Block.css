@@ -3,7 +3,7 @@
 }
 
 .leftBlock {
-  width: 50%;
+  width: 55%;
   display: inline-block;
   vertical-align: top;
 }
@@ -13,4 +13,20 @@
   display: inline-block;
   float: right;
   vertical-align: top;
+}
+
+.text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media all and (max-width: 800px){
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+    float: none;
+  }
 }
