@@ -433,7 +433,7 @@ class Earnings extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div className={styles.leftBlock}>
+        <div className={styles.rightBlock}>
           <ScatterPlot
             width="100%"
             data={earnings_data}
@@ -480,8 +480,10 @@ class Earnings extends React.Component {
           }}
           />
         </div>
-        <div className={styles.rightBlock}>
-          Something about earnings here
+        <div className={styles.leftBlock}>
+          <p className={styles.text}>
+            Something about earnings here
+          </p>
         </div>
       </div>
     )

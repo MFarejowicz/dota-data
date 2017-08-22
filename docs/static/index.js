@@ -10319,7 +10319,7 @@ var Earnings = function (_React$Component) {
         { className: _Block2.default.container },
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.leftBlock },
+          { className: _Block2.default.rightBlock },
           _react2.default.createElement(_replotScatter2.default, {
             width: "100%",
             data: earnings_data,
@@ -10368,8 +10368,12 @@ var Earnings = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.rightBlock },
-          "Something about earnings here"
+          { className: _Block2.default.leftBlock },
+          _react2.default.createElement(
+            "p",
+            { className: _Block2.default.text },
+            "Something about earnings here"
+          )
         )
       );
     }
@@ -10433,7 +10437,7 @@ var PrizePools = function (_React$Component) {
         { className: _Block2.default.container },
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.leftBlock },
+          { className: _Block2.default.rightBlock },
           _react2.default.createElement(_replotLine2.default, {
             width: "100%",
             data: data,
@@ -10463,7 +10467,7 @@ var PrizePools = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.rightBlock },
+          { className: _Block2.default.leftBlock },
           _react2.default.createElement(
             "p",
             { className: _Block2.default.text },
@@ -10552,7 +10556,7 @@ var Tournaments = function (_React$Component) {
         { className: _Block2.default.container },
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.leftBlock },
+          { className: _Block2.default.leftBlockAlt },
           _react2.default.createElement(_replotTreemap2.default, {
             width: "95%",
             data: data,
@@ -10562,8 +10566,12 @@ var Tournaments = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.rightBlock },
-          "Something about tournaments here"
+          { className: _Block2.default.rightBlockAlt },
+          _react2.default.createElement(
+            "p",
+            { className: _Block2.default.text },
+            "Something about tournaments here"
+          )
         )
       );
     }
@@ -10627,7 +10635,7 @@ var Viewers = function (_React$Component) {
         { className: _Block2.default.container },
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.leftBlock },
+          { className: _Block2.default.rightBlock },
           _react2.default.createElement(_replotBar2.default, {
             width: "100%",
             data: data,
@@ -10653,8 +10661,12 @@ var Viewers = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: _Block2.default.rightBlock },
-          "Something about viewership here"
+          { className: _Block2.default.leftBlock },
+          _react2.default.createElement(
+            "p",
+            { className: _Block2.default.text },
+            "Something about viewership here"
+          )
         )
       );
     }
@@ -11774,13 +11786,15 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, ".Block__container___1KJIg {\n  overflow: auto;\n}\n\n.Block__leftBlock___3tRPP {\n  width: 55%;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.Block__rightBlock___T35YA {\n  width: 40%;\n  display: inline-block;\n  float: right;\n  vertical-align: top;\n}\n\n.Block__text___bdazF {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n@media all and (max-width: 800px){\n  .Block__leftBlock___3tRPP {\n    width: 100%;\n  }\n  .Block__rightBlock___T35YA {\n    width: 100%;\n    float: none;\n  }\n}\n", ""]);
+exports.push([module.i, ".Block__container___1KJIg {\n  overflow: auto;\n}\n\n.Block__leftBlock___3tRPP {\n}\n\n.Block__rightBlock___T35YA {\n  float: right;\n  width: 55%;\n}\n\n.Block__leftBlockAlt___1N-rq {\n  width: 55%;\n  float: left;\n  /*display: inline-block;\n  vertical-align: top;*/\n}\n\n.Block__rightBlockAlt___2mVfv {\n  /*width: 40%;\n  display: inline-block;\n  float: right;\n  vertical-align: top;*/\n}\n\n.Block__text___bdazF {\n  margin: 0;\n  font-size: 18px;\n  line-height: 150%;\n}\n\n@media all and (max-width: 800px){\n  .Block__leftBlock___3tRPP {\n    width: 100%;\n  }\n  .Block__rightBlock___T35YA {\n    width: 100%;\n    float: none;\n  }\n  .Block__text___bdazF {\n    font-size: 12px;\n  }\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"container": "Block__container___1KJIg",
 	"leftBlock": "Block__leftBlock___3tRPP",
 	"rightBlock": "Block__rightBlock___T35YA",
+	"leftBlockAlt": "Block__leftBlockAlt___1N-rq",
+	"rightBlockAlt": "Block__rightBlockAlt___2mVfv",
 	"text": "Block__text___bdazF"
 };
 

@@ -35,7 +35,7 @@ class Viewers extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div className={styles.leftBlock}>
+        <div className={styles.rightBlock}>
           <BarGraph
             width="100%"
             data={data}
@@ -59,8 +59,10 @@ class Viewers extends React.Component {
               showBorder: false
             }}/>
         </div>
-        <div className={styles.rightBlock}>
-          Something about viewership here
+        <div className={styles.leftBlock}>
+          <p className={styles.text}>
+            Something about viewership here
+          </p>
         </div>
       </div>
     )

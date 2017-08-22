@@ -77,7 +77,7 @@ class Tournaments extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div className={styles.leftBlock}>
+        <div className={styles.leftBlockAlt}>
           <TreeMap
             width="95%"
             data={data}
@@ -85,8 +85,10 @@ class Tournaments extends React.Component {
             weightKey="prizepool"
             color={colorPalette}/>
         </div>
-        <div className={styles.rightBlock}>
-          Something about tournaments here
+        <div className={styles.rightBlockAlt}>
+          <p className={styles.text}>
+            Something about tournaments here 
+          </p>
         </div>
       </div>
     )

@@ -3,16 +3,25 @@
 }
 
 .leftBlock {
-  width: 55%;
-  display: inline-block;
-  vertical-align: top;
 }
 
 .rightBlock {
-  width: 40%;
+  float: right;
+  width: 55%;
+}
+
+.leftBlockAlt {
+  width: 55%;
+  float: left;
+  /*display: inline-block;
+  vertical-align: top;*/
+}
+
+.rightBlockAlt {
+  /*width: 40%;
   display: inline-block;
   float: right;
-  vertical-align: top;
+  vertical-align: top;*/
 }
 
 .text {
@@ -28,5 +37,8 @@
   .rightBlock {
     width: 100%;
     float: none;
+  }
+  .text {
+    font-size: 12px;
   }
 }

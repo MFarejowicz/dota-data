@@ -41,7 +41,7 @@ class PrizePools extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div className={styles.leftBlock}>
+        <div className={styles.rightBlock}>
           <LineChart
             width="100%"
             data={data}
@@ -69,7 +69,7 @@ class PrizePools extends React.Component {
               showBorder: false
             }}/>
         </div>
-        <div className={styles.rightBlock}>
+        <div className={styles.leftBlock}>
           <p className={styles.text}>
             Sports and E-Sports alike hold tournaments featuring grand prize pools,
             in an effort to draw the toughest competitors and biggest crowds.
