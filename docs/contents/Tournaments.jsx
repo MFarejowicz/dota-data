@@ -5,6 +5,18 @@ import styles from "./Block.css"
 
 class Tournaments extends React.Component {
 
+  fillTooltip(key, title, data, allData) {
+    let total = 0
+    for (let dataPoint of data) {
+      total += dataPoint.prizepool
+    }
+    return (
+      <div>
+        <span>Prize Total: ${total}<br/></span>
+      </div>
+    )
+  }
+
   render() {
     const data = [
       {organizer: "Valve", series: "The International", tournament: "2011", prizepool: 1600000},
@@ -83,11 +95,44 @@ class Tournaments extends React.Component {
             data={data}
             keyOrder={["organizer", "series", "tournament"]}
             weightKey="prizepool"
-            color={colorPalette}/>
+            color={colorPalette}
+            tooltip={false}
+            tooltipContents={this.fillTooltip}/>
         </div>
         <div className={styles.rightBlockAlt}>
           <p className={styles.text}>
-            Something about tournaments here 
+            Tournaments are the lifeblood of any professional sport or E-Sport,
+            and DotA 2 is no exception. Tournaments are where players can prove
+            their worth and earn their living. The beauty of E-Sports tournaments lies
+            in the fact that they can be organized by official parties, such as Valve, the developer
+            of the game, or by third-party organizations. What this means for the
+            community is plenty of opportunities for the players to thrive and for the
+            fans to support the game.
+            <br/><br/>
+            We can take a look at this treemap, organized by prizepool amounts,
+            to get a feel for just how many tournaments exist, and how large the prizepools are.
+            Right off the bat we see that the largest prizepools come from
+            Valve-sponsored tournaments. And of the Valve sponsored tournaments,
+            most of the money in DotA 2 comes from <i>The International</i>, which makes
+            sense given the enourmous prizepools we saw above. Majors also provide
+            significant prizepools, but they are a relatively new event, so they
+            hardly compete with <i>The International</i>.
+            <br/><br/>
+            On the Third-Party side, we see a fairly even prizepool distribution amongst the various
+            organizers. Prizepools tend to vary heavily from season to season, and
+            many tournaments depend on contributions from fans to increase reward
+            amounts. Though third-party event prizepools can not really compare with Valve's
+            events, they are still attended by many pros and fans alike, and without them,
+            DotA 2 would not be where it is today.
+            <br/><br/>
+            What we cannot see from the treemap but really speaks to the popularity of DotA 2
+            is the projected future growth of the game. Recently, Valve announced their
+            plan for the 2017-18 competitive season, which will have 11 majors and 11 minors,
+            each with significant prizepools. These majors and minors will be hosted
+            by the third-party organizers we do see in the treemap, but other independent
+            tournaments will not disappear. This incredible growth is a feature of E-Sports
+            which we do not see mirrored in the mainstream sports scene, which often
+            has repeated annual tournaments with only moderate growth in prizepools.
           </p>
         </div>
       </div>

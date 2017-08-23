@@ -10372,7 +10372,24 @@ var Earnings = function (_React$Component) {
           _react2.default.createElement(
             "p",
             { className: _Block2.default.text },
-            "Something about earnings here"
+            "Many often wonder if a career in professional E-Sports is a feasible lifestyle. We can take a look at the lifetime earnings of various players to determine the answer to such a question.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "The scatter plot reveals that many DotA 2 players have earnings in the millions. These are considerable statistics, even if we keep in mind that this graph contains lifetime data for the top 100 earning players. For everyone on the chart as well as probably many more, playing DotA 2 serves as a full time career, and they have earned amounts that are more than enough to sustain them. Much like any sport, DotA 2 and other E-Sports are not viable for anyone and everyone to live off of, but it is extremely valid for the distinguished elite.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "One semi-unique aspect about the E-Sports scene is the importance of winning tournaments. In DotA 2, players earn rewards from the prizepools of tournaments, i.e. there are generally no regular salaries paid out. All earnings are determined by how a team performs in the tournaments they compete in. This is drastically different than the contracts held by players in divisions like the NFL, NBA, MLB, etc. It means that a team has the potential to earn absolutely nothing, or earn ridiculous quanities. Players have to regularly prove themselves to take home the most that they can. This keeps the competitive scene exciting, and fans get to see veteran players continue their victory streaks as well as new players enter the scene and outcompete with the regulars. New players are constantly emerging in the competitive DotA 2 scene, in contrast to the somewhat regular patterns in regular sports with drafts and seasons.",
+            _react2.default.createElement("br", null),
+            "We also see whole new teams emerge fairly often in DotA 2. Another unique aspect of E-Sports is the dynamic nature of professional teams, in terms of branding as well as makeup. In mainstream sports, teams are often franchises with owners, coaches, and countless others behind the scenes to manage the direction of the team. This kind of regulated structure is rare in DotA 2. Teams can be completely independent, or they can have a coach and/or an owner. All that matters at the end of the day is winning tournaments. If a team does not work out, it is not uncommon to see a disband. This fact that teams are composed of 5 players means that teammate interaction is also of critical importance to the game. Players on a team are put in a position where they must constantly cooperate, so the ability to work together is much more important in E-Sports, versus the mainstream sports approach of recruiting the best individual players.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "You may also observe the wide range of player ages we see in a game like DotA 2. Sports athletes often start their trade at a young age, but do not get into the professional scene until much later. E-Sports has a different timeline, with players often starting young but often competing young as well. Some of the top earners such as SumaiL and ana are 18 and 17, respectively. However, this also means that players often end their careers at a younger age than players in traditional sports.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "We can see this trend hold true in the boxplots showing off the distributions of ages in various games. E-Sports like DotA 2 and LoL have incredibly young players, with mean ages of 23.74 and 22.87, respectively. In the NFL, the mean age is 28.94, which means a lot of time of put into developing skills before participation in paid competitions.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "Overall, the specific age of players is not the greatest defining factor in E-Sports, but player's young ages combined with extremely dynamic teams and a fast turnaround on the existing pool of players keeps the scene exciting and legitimate."
           )
         )
       );
@@ -10429,7 +10446,7 @@ var PrizePools = function (_React$Component) {
   _createClass(PrizePools, [{
     key: "render",
     value: function render() {
-      var data = [{ game: "DotA 2", year: "2011", prizepool: 1600000 }, { game: "DotA 2", year: "2012", prizepool: 1600000 }, { game: "DotA 2", year: "2013", prizepool: 2874380 }, { game: "DotA 2", year: "2014", prizepool: 10931105 }, { game: "DotA 2", year: "2015", prizepool: 18429613 }, { game: "DotA 2", year: "2016", prizepool: 20770460 }, { game: "DotA 2", year: "2017", prizepool: 24787916 }, { game: "LoL", year: "2011", prizepool: 100000 }, { game: "LoL", year: "2012", prizepool: 1970000 }, { game: "LoL", year: "2013", prizepool: 2050000 }, { game: "LoL", year: "2014", prizepool: 2130000 }, { game: "LoL", year: "2015", prizepool: 2130000 }, { game: "LoL", year: "2016", prizepool: 5070000 }, { game: "Smite", year: "2015", prizepool: 2600000 }, { game: "Smite", year: "2016", prizepool: 1000000 }, { game: "Smite", year: "2017", prizepool: 1000000 }, { game: "Halo 5", year: "2016", prizepool: 2500000 }, { game: "Halo 5", year: "2017", prizepool: 1000000 }, { game: "CS:GO", year: "2016", prizepool: 1410000 }, { game: "CS:GO", year: "2017", prizepool: 1000000 }, { game: "Masters", year: "2011", prizepool: 8000000 }, { game: "Masters", year: "2012", prizepool: 8000000 }, { game: "Masters", year: "2013", prizepool: 8000000 }, { game: "Masters", year: "2014", prizepool: 9000000 }, { game: "Masters", year: "2015", prizepool: 10000000 }, { game: "Masters", year: "2016", prizepool: 10000000 }];
+      var data = [{ game: "DotA TI", year: "2011", prizepool: 1600000 }, { game: "DotA TI", year: "2012", prizepool: 1600000 }, { game: "DotA TI", year: "2013", prizepool: 2874380 }, { game: "DotA TI", year: "2014", prizepool: 10931105 }, { game: "DotA TI", year: "2015", prizepool: 18429613 }, { game: "DotA TI", year: "2016", prizepool: 20770460 }, { game: "DotA TI", year: "2017", prizepool: 24787916 }, { game: "LoL WC", year: "2011", prizepool: 100000 }, { game: "LoL WC", year: "2012", prizepool: 1970000 }, { game: "LoL WC", year: "2013", prizepool: 2050000 }, { game: "LoL WC", year: "2014", prizepool: 2130000 }, { game: "LoL WC", year: "2015", prizepool: 2130000 }, { game: "LoL WC", year: "2016", prizepool: 5070000 }, { game: "Smite WC", year: "2015", prizepool: 2600000 }, { game: "Smite WC", year: "2016", prizepool: 1000000 }, { game: "Smite WC", year: "2017", prizepool: 1000000 }, { game: "Halo 5 WC", year: "2016", prizepool: 2500000 }, { game: "Halo 5 WC", year: "2017", prizepool: 1000000 }, { game: "CS ELeague", year: "2016", prizepool: 1410000 }, { game: "CS ELeague", year: "2017", prizepool: 1000000 }, { game: "Masters", year: "2011", prizepool: 8000000 }, { game: "Masters", year: "2012", prizepool: 8000000 }, { game: "Masters", year: "2013", prizepool: 8000000 }, { game: "Masters", year: "2014", prizepool: 9000000 }, { game: "Masters", year: "2015", prizepool: 10000000 }, { game: "Masters", year: "2016", prizepool: 10000000 }];
       var colorPalette = ["#500700", "#193858", "#0b7640", "#51385f", "#d8bc32", "#8c1f0b", "#235160"];
 
       return _react2.default.createElement(
@@ -10471,17 +10488,29 @@ var PrizePools = function (_React$Component) {
           _react2.default.createElement(
             "p",
             { className: _Block2.default.text },
-            "Sports and E-Sports alike hold tournaments featuring grand prize pools, in an effort to draw the toughest competitors and biggest crowds. Here, I compare the prize pools for the six largest tournaments of six popular sports. We can then analyze the trends over time with the use of a line chart.",
+            "Sports and E-Sports alike hold tournaments featuring grand prize pools, in an effort to draw the toughest competitors and biggest crowds. Here, we can compare the prize pools for the six largest tournaments of six popular sports. We can then analyze the trends over time with the use of a line chart.",
             _react2.default.createElement("br", null),
             " ",
             _react2.default.createElement("br", null),
-            "Immediately, one may notice that the prize pool for DotA 2 towers above other popular E-Sports, but also above traditional tournaments like the Masters in professional golf. The tournament featured here for DotA 2 is",
+            "Immediately, one may notice that the prize pool for DotA 2 towers above other popular E-Sports, but also above traditional tournaments like ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The Masters"
+            ),
+            " in professional golf. The tournament featured here for DotA 2 is ",
             _react2.default.createElement(
               "i",
               null,
               "The International"
             ),
-            ". Held once a year in Seattle and hosted by Valve, it regularly holds the position for largest prize pool in any E-Sport, and payouts from combined payouts from all Internationals are higher than the combined payouts from the next five largest E-Sports over recent years.",
+            ". Held once a year in Seattle and hosted by Valve, it regularly holds the position for largest prize pool in any E-Sport, and payouts from combined payouts from all ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "Internationals"
+            ),
+            " are higher than the combined payouts from the next five largest E-Sports over recent years.",
             _react2.default.createElement("br", null),
             " ",
             _react2.default.createElement("br", null),
@@ -10546,6 +10575,47 @@ var Tournaments = function (_React$Component) {
   }
 
   _createClass(Tournaments, [{
+    key: "fillTooltip",
+    value: function fillTooltip(key, title, data, allData) {
+      var total = 0;
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var dataPoint = _step.value;
+
+          total += dataPoint.prizepool;
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "span",
+          null,
+          "Prize Total: $",
+          total,
+          _react2.default.createElement("br", null)
+        )
+      );
+    }
+  }, {
     key: "render",
     value: function render() {
       var data = [{ organizer: "Valve", series: "The International", tournament: "2011", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2012", prizepool: 1600000 }, { organizer: "Valve", series: "The International", tournament: "2013", prizepool: 2874380 }, { organizer: "Valve", series: "The International", tournament: "2014", prizepool: 10931105 }, { organizer: "Valve", series: "The International", tournament: "2015", prizepool: 18429613 }, { organizer: "Valve", series: "The International", tournament: "2016", prizepool: 20770460 }, { organizer: "Valve", series: "The International", tournament: "2017", prizepool: 24787916 }, { organizer: "Valve", series: "Majors", tournament: "Kiev 2017", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Boston 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Manila 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Shanghai 2016", prizepool: 3000000 }, { organizer: "Valve", series: "Majors", tournament: "Frankfurt 2015", prizepool: 3000000 }, { organizer: "Third Party", series: "Epicenter", tournament: "2017", prizepool: 500000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 3", prizepool: 300000 }, { organizer: "Third Party", series: "ESL One", tournament: "Hamburg 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2017", prizepool: 250000 }, { organizer: "Third Party", series: "ESL One", tournament: "Genting 2017", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 5", prizepool: 139860 }, { organizer: "Third Party", series: "Summit", tournament: "Season 7", prizepool: 100000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 6", prizepool: 100000 }, { organizer: "Third Party", series: "Mars League", tournament: "Autumn 2016", prizepool: 250000 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 2", prizepool: 300000 }, { organizer: "Third Party", series: "Summit", tournament: "Season 5", prizepool: 101044 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2016", prizepool: 314545 }, { organizer: "Third Party", series: "Epicenter", tournament: "2016", prizepool: 500000 }, { organizer: "Third Party", series: "ESL One", tournament: "Manila 2016", prizepool: 250000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 4", prizepool: 195274 }, { organizer: "Third Party", series: "Mars League", tournament: "Winter 2015", prizepool: 277668 }, { organizer: "Third Party", series: "i-League StarSeries", tournament: "Season 1", prizepool: 302277 }, { organizer: "Third Party", series: "Summit", tournament: "Season 4", prizepool: 114866 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2015", prizepool: 286622 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2015", prizepool: 286622 }, { organizer: "Third Party", series: "Mars League", tournament: "Spring 2015", prizepool: 241815 }, { organizer: "Third Party", series: "Summit", tournament: "Season 3", prizepool: 271685 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 12", prizepool: 150000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 3", prizepool: 265378 }, { organizer: "Third Party", series: "Summit", tournament: "Season 2", prizepool: 129258 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 11", prizepool: 86521 }, { organizer: "Third Party", series: "ESL One", tournament: "New York 2014", prizepool: 141010 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 2", prizepool: 80589 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 10", prizepool: 273980 }, { organizer: "Third Party", series: "ESL One", tournament: "Frankfurt 2014", prizepool: 210900 }, { organizer: "Third Party", series: "Summit", tournament: "Season 1", prizepool: 132350 }, { organizer: "Third Party", series: "Mars League", tournament: "Summer 2014", prizepool: 24046 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 9", prizepool: 190162 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 8", prizepool: 124000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Kick-Off", prizepool: 50000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 1", prizepool: 265257 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 2", prizepool: 115560 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 3", prizepool: 149582 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 4", prizepool: 150000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 5", prizepool: 100000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 6", prizepool: 185000 }, { organizer: "Third Party", series: "DreamLeague", tournament: "Season 7", prizepool: 175000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 7", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 6", prizepool: 22500 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 5", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 4", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 3", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 2", prizepool: 15000 }, { organizer: "Third Party", series: "StarSeries", tournament: "Season 1", prizepool: 15000 }, { organizer: "Third Party", series: "Dota Pit", tournament: "Season 1", prizepool: 3000 }];
@@ -10562,7 +10632,9 @@ var Tournaments = function (_React$Component) {
             data: data,
             keyOrder: ["organizer", "series", "tournament"],
             weightKey: "prizepool",
-            color: colorPalette })
+            color: colorPalette,
+            tooltip: false,
+            tooltipContents: this.fillTooltip })
         ),
         _react2.default.createElement(
           "div",
@@ -10570,7 +10642,28 @@ var Tournaments = function (_React$Component) {
           _react2.default.createElement(
             "p",
             { className: _Block2.default.text },
-            "Something about tournaments here"
+            "Tournaments are the lifeblood of any professional sport or E-Sport, and DotA 2 is no exception. Tournaments are where players can prove their worth and earn their living. The beauty of E-Sports tournaments lies in the fact that they can be organized by official parties, such as Valve, the developer of the game, or by third-party organizations. What this means for the community is plenty of opportunities for the players to thrive and for the fans to support the game.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "We can take a look at this treemap, organized by prizepool amounts, to get a feel for just how many tournaments exist, and how large the prizepools are. Right off the bat we see that the largest prizepools come from Valve-sponsored tournaments. And of the Valve sponsored tournaments, most of the money in DotA 2 comes from ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            ", which makes sense given the enourmous prizepools we saw above. Majors also provide significant prizepools, but they are a relatively new event, so they hardly compete with ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            ".",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "On the Third-Party side, we see a fairly even prizepool distribution amongst the various organizers. Prizepools tend to vary heavily from season to season, and many tournaments depend on contributions from fans to increase reward amounts. Though third-party event prizepools can not really compare with Valve's events, they are still attended by many pros and fans alike, and without them, DotA 2 would not be where it is today.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "What we cannot see from the treemap but really speaks to the popularity of DotA 2 is the projected future growth of the game. Recently, Valve announced their plan for the 2017-18 competitive season, which will have 11 majors and 11 minors, each with significant prizepools. These majors and minors will be hosted by the third-party organizers we do see in the treemap, but other independent tournaments will not disappear. This incredible growth is a feature of E-Sports which we do not see mirrored in the mainstream sports scene, which often has repeated annual tournaments with only moderate growth in prizepools."
           )
         )
       );
@@ -10665,7 +10758,73 @@ var Viewers = function (_React$Component) {
           _react2.default.createElement(
             "p",
             { className: _Block2.default.text },
-            "Something about viewership here"
+            "Like any sport, DotA 2 and E-Sports in general depend on their fans and viewers to survive. If no one was interested in the game, it would cease to exist as a professional competition. We can use a bar graph to compare viewership for the major tournament in various games across multiple years.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "In the greater scheme of things, DotA 2 pulls a fairly small crowd for",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            ", losing to other very popular tournaments such as Leagues's ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "World Championship"
+            ),
+            " and ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The Masters"
+            ),
+            " golf tournament. This generally comes as a result of the media by which fans view video games tournaments. While one can watch the Super Bowl right on their TV at home, E-Sports often choose to livestream their tournaments on dedicated gaming platforms like ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://twitch.tv" },
+              "Twitch.tv"
+            ),
+            ", which grants less publicity and ease of use. At the same time, this means that any viewers E-Sports tend to be more dedicated to the game, and this means that the prize pools we see are even more impressive considering the ratings.",
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("br", null),
+            "Although on the whole, E-Sports like League or DotA 2 receive lower viewer numbers than events like the ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "Superbowl"
+            ),
+            " or ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The Masters"
+            ),
+            ", the E-Sports scene appears to have greater growth than any mainstream event. Both the ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "Superbowl"
+            ),
+            " and ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The Masters"
+            ),
+            " are well-established sporting events. Like the bar graph shows, their ratings are fairly constant, with only minor variation from year to year. On the other hand, ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The International"
+            ),
+            " and ",
+            _react2.default.createElement(
+              "i",
+              null,
+              "The League World Championship"
+            ),
+            " are relatively new tournaments, so their numbers have skyrocketed in the years they have existed. For both events, view counts have actually more than multiplied by 10 since their origins. Though we can't necessarily expect similar growth rates in the future, if the E-Sports scene sees even a fraction of its current growth, esults would be drastic. E-Sports might start to harbor mainstream attention, leading to even greater viewer numbers, prizepool amounts, and event popularity."
           )
         )
       );

@@ -482,7 +482,65 @@ class Earnings extends React.Component {
         </div>
         <div className={styles.leftBlock}>
           <p className={styles.text}>
-            Something about earnings here
+            Many often wonder if a career in professional E-Sports is a feasible
+            lifestyle. We can take a look at the lifetime earnings of various
+            players to determine the answer to such a question.
+            <br/><br/>
+            The scatter plot reveals that many DotA 2 players have earnings in
+            the millions. These are considerable statistics, even if we keep in mind
+            that this graph contains lifetime data for the top 100 earning players.
+            For everyone on the chart as well as probably many more, playing DotA 2
+            serves as a full time career, and they have earned amounts that are more than
+            enough to sustain them. Much like any sport, DotA 2 and other E-Sports are not viable
+            for anyone and everyone to live off of, but it is extremely valid for
+            the distinguished elite.
+            <br/><br/>
+            One semi-unique aspect about the E-Sports scene is the importance of winning
+            tournaments. In DotA 2, players earn rewards from the prizepools
+            of tournaments, i.e. there are generally no regular salaries paid out.
+            All earnings are determined by how a team performs in the tournaments they compete in.
+            This is drastically different than the contracts held by players in divisions like
+            the NFL, NBA, MLB, etc. It means that a team has the potential to earn absolutely nothing,
+            or earn ridiculous quanities. Players have to regularly prove themselves
+            to take home the most that they can. This keeps the competitive scene
+            exciting, and fans get to see veteran players continue their victory
+            streaks as well as new players enter the scene and outcompete with the regulars.
+            New players are constantly emerging in the competitive DotA 2 scene,
+            in contrast to the somewhat regular patterns in regular sports with drafts and
+            seasons.
+            <br/>
+            We also see whole new teams emerge fairly often in DotA 2. Another
+            unique aspect of E-Sports is the dynamic nature of professional teams,
+            in terms of branding as well as makeup. In mainstream sports, teams are often
+            franchises with owners, coaches, and countless others behind the scenes
+            to manage the direction of the team. This kind of regulated structure
+            is rare in DotA 2. Teams can be completely independent, or they can have a
+            coach and/or an owner. All that matters at the end of the day is
+            winning tournaments. If a team does not work out, it is not uncommon
+            to see a disband. This fact that teams are composed of 5 players means
+            that teammate interaction is also of critical importance to the game.
+            Players on a team are put in a position where they must constantly cooperate,
+            so the ability to work together is much more important in E-Sports, versus
+            the mainstream sports approach of recruiting the best individual players.
+            <br/><br/>
+            You may also observe the wide range of player ages we see in a game like
+            DotA 2. Sports athletes often start their trade at a young age,
+            but do not get into the professional scene until much later. E-Sports has a different
+            timeline, with players often starting young but often competing young as well. Some of the
+            top earners such as SumaiL and ana are 18 and 17, respectively. However, this
+            also means that players often end their careers at a younger age than
+            players in traditional sports.
+            <br/><br/>
+            We can see this trend hold true in the boxplots showing off the distributions of
+            ages in various games. E-Sports like DotA 2 and LoL have incredibly young players,
+            with mean ages of 23.74 and 22.87, respectively. In the NFL, the mean
+            age is 28.94, which means a lot of time of put into developing skills before
+            participation in paid competitions.
+            <br/><br/>
+            Overall, the specific age of players is not the greatest defining factor
+            in E-Sports, but player's young ages combined with extremely dynamic teams
+            and a fast turnaround on the existing pool of players keeps the scene
+            exciting and legitimate.
           </p>
         </div>
       </div>
